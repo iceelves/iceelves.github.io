@@ -50,6 +50,20 @@
             zoom: 1;
             display: none;
         }
+
+        /* 底部样式 */
+        element.style {
+            font-size: 12px;
+            height: initial;
+            line-height: initial;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            white-space: nowrap;
+        }
     </style>
     <script type="text/javascript">
         // 延迟刷新
@@ -77,11 +91,23 @@
     <!-- 背景图片 -->
     <div class="homeBackground"></div>
     <!-- 主页内容 -->
-    <img class="Logo" src="./images/Logo.png"/>
+    <img class="Logo" src="./images/Logo.png" />
     <!-- <div id="info">
         <h1>冰云信息化平台</h1>
         <label>网站建设中…</label>
     </div> -->
+    <footer class="border-top footer text-center" style="font-size: 12px;height: initial;line-height: initial;">
+        <div class="container">
+            <p style="margin-bottom: 10px;" />
+            <p style="margin-bottom: 10px;">
+                Copyright &copy; 2019 - 2021 www.iceelves.com All Rights Reserved
+            </p>
+            <p style="margin-bottom: 10px;">
+                北京冰云信息科技有限公司 | <a style="color:white;" href="http://beian.miit.gov.cn/"
+                    target="view_window">京ICP备20006896号</a>
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
