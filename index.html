@@ -7,48 +7,14 @@
     <meta name="renderer" content="webkit" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>北京冰云信息科技有限公司</title>
-    <meta name="keywords" content="刘佳华" />
     <meta name="description" content="" />
-    <meta name="author" content="LiuJiaHua" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <style>
         body {
             margin: 0;
             text-align: center;
-            background-color: #000000;
-            color: #FFFFFF;
-        }
-
-        .Logo {
-            display: none;
-            width: 500px;
-            height: 200px;
-            float: left;
-            margin-left: 10%;
-            margin-top: -8%;
-        }
-
-        #info {
-            margin-left: 10%;
-            margin-top: -8%;
-            text-align: left;
-        }
-
-        .homeBackground {
-            background-image: url("./images/background.jpg");
-            position: fixed;
-            _position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            min-width: 1000px;
-            z-index: -10;
-            background-position: center 0;
-            background-repeat: no-repeat;
-            background-size: cover;
-            zoom: 1;
-            display: none;
+            background-color: #1A1A1A;
+            color: white;
         }
 
         /* 底部样式 */
@@ -65,37 +31,57 @@
             white-space: nowrap;
         }
     </style>
-    <script type="text/javascript">
-        // 延迟刷新
-        $(document).ready(function () {
-            $(".Logo").fadeIn(2000);
-        });
-        setTimeout(function () {
-            $(document).ready(function () {
-                $(".homeBackground").fadeIn(2000);
-            })
-        }, 2000);
-        // 窗口改变事件
-        $(document).ready(function () {
-            var vResize = ($(window).height() - parseInt($("body").css("height"))) / 2 - 80;
-            $("body").css("margin-top", vResize <= 0 ? 0 : vResize);
-            $(window).resize(function () {
-                var vResize = ($(window).height() - parseInt($("body").css("height"))) / 2 - 80;
-                $("body").css("margin-top", vResize <= 0 ? 0 : vResize);
-            });
-        });
-    </script>
 </head>
 
 <body>
-    <!-- 背景图片 -->
-    <div class="homeBackground"></div>
-    <!-- 主页内容 -->
-    <img class="Logo" src="./images/Logo.png" />
-    <!-- <div id="info">
-        <h1>冰云信息化平台</h1>
-        <label>网站建设中…</label>
-    </div> -->
+    <h5 class="ml9">
+        <span class="text-wrapper">
+            <span class="letters">Under construction…</span>
+        </span>
+    </h5>
+    <style>
+        .ml9 {
+            position: relative;
+            font-weight: 200;
+            font-size: 4em;
+            margin-top: 18%;
+        }
+
+        .ml9 .text-wrapper {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.2em;
+            padding-right: 0.05em;
+            padding-bottom: 0.1em;
+            overflow: hidden;
+        }
+
+        .ml9 .letter {
+            transform-origin: 50% 100%;
+            display: inline-block;
+            line-height: 1em;
+        }
+    </style>
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml9 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml9 .letter',
+                scale: [0, 1],
+                duration: 1500,
+                elasticity: 600,
+                delay: (el, i) => 45 * (i + 1)
+            }).add({
+                targets: '.ml9',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
     <footer class="border-top footer text-center" style="font-size: 12px;height: initial;line-height: initial;">
         <div class="container">
             <p style="margin-bottom: 10px;" />
