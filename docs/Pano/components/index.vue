@@ -1,8 +1,10 @@
 <template>
   <div>
     <ImageOverlay 
-      image1="/Pano/pano1.jpg" 
-      image2="/Pano/pano2.jpg" 
+      :images="[
+        '/Pano/pano1.jpg',
+        '/Pano/pano2.jpg'
+      ]" 
       :duration="5000"
     />
 
