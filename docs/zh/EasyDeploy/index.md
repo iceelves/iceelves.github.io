@@ -6,7 +6,7 @@ hero:
   text: 在 Windows 中轻松部署多个应用服务环境
   tagline: 简单高效的应用托管
   image:
-    src: /terminal.png
+    src: /EasyDeploy/terminal.png
     alt: EasyDeploy
   actions:
     - theme: brand

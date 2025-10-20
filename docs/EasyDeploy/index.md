@@ -6,7 +6,7 @@ hero:
   text: Easily deploy multiple application service environments in Windows.
   tagline: Simple and efficient application hosting
   image:
-    src: /terminal.png
+    src: /EasyDeploy/terminal.png
     alt: EasyDeploy
   actions:
     - theme: brand
