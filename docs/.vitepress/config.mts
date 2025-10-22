@@ -21,8 +21,19 @@ export default defineConfig({
         {
           text: 'Introduction',
           items: [
-            { text: 'What is EasyDeploy?', link: '/EasyDeploy/Document/what-is-easydeploy.html' },
+            { text: 'What is EasyDeploy', link: '/EasyDeploy/Document/what-is-easydeploy.html' },
             { text: 'Supported file types', link: '/EasyDeploy/Document/supported-file-types.html' }
+          ]
+        }
+      ],
+
+      // 为 Pano 部分配置侧边栏
+      '/Pano/': [
+        {
+          text: 'Introduction',
+          items: [
+            { text: 'What is Pano video stitching', link: '/Pano/Document/what-is-pano.html' },
+            { text: 'Contact Us', link: '/Pano/Document/contact-us.html' }
           ]
         }
       ]
@@ -73,8 +84,19 @@ export default defineConfig({
             {
               text: '简介',
               items: [
-                { text: '什么是 EasyDeploy?', link: '/zh/EasyDeploy/Document/what-is-easydeploy.html' },
+                { text: '什么是 EasyDeploy', link: '/zh/EasyDeploy/Document/what-is-easydeploy.html' },
                 { text: '支持文件类型', link: '/zh/EasyDeploy/Document/supported-file-types.html' }
+              ]
+            }
+          ],
+
+          // 为 Pano 部分配置侧边栏
+          '/zh/Pano/': [
+            {
+              text: '简介',
+              items: [
+                { text: '什么是全景视频拼接', link: '/zh/Pano/Document/what-is-pano.html' },
+                { text: '联系我们', link: '/zh/Pano/Document/contact-us.html' }
               ]
             }
           ]

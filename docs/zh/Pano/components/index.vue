@@ -10,60 +10,60 @@
 
     <div class="hero-overlay">
       <div class="hero-content">
-        <h1 class="hero-title">Panoramic video surveillance</h1>
+        <h1 class="hero-title">全景视频监控</h1>
         <p class="hero-description">
-          Bringing you a different surveillance screen, allowing you to see more and see further.
+          带给你不一样的监控画面，看到的更多，看到的更远。
         </p>
-        <button class="hero-button" @click="LearnMore">Learn more</button>
-        <button class="hero-button" @click="ContactUs">Contact Us</button>
+        <button class="hero-button" @click="LearnMore">了解更多</button>
+        <button class="hero-button" @click="ContactUs">联系我们</button>
       </div>
     </div>
 
     <CardContainer title="技术应用">
       <Card
         title="RTSP/RTMP"
-        content="Support mainstream real-time streaming protocols for low latency real-time transmission of audio and video streams."
+        content="支持主流实时流媒体传输协议，以低延迟实时传输音视频流。"
       />
       <Card
         title="ONVIF"
-        content="Support common open protocols in the security industry, cross brand device interconnection, video streaming transmission, PTZ control, etc."
+        content="支持安防行业通用的开放协议，跨品牌设备互联、视频流传输、PTZ 控制等。"
       />
       <Card
         title="CUDA"
-        content="Utilizing the powerful computing power of GPU to accelerate video processing and significantly improving real-time processing performance through CUDA core."
+        content="利用 GPU 强大算力加速视频处理，通过 CUDA 核心大幅提升实时处理性能。"
       />
       <Card
         title="MP4/FLV"
-        content="Support mainstream audio and video protocol storage, select downloads in different time periods, convenient, fast, and widely compatible."
+        content="支持主流音视频协议存储，分时段选择下载，方便快捷，兼容广泛。"
       />
       <Card
         title="H.264/HEVC"
-        content="Supports mainstream video compression technologies, significantly reducing bandwidth usage while maintaining high-definition image quality."
+        content="支持主流的视频压缩技术，显著降低带宽占用，同时保持高清画质。"
       />
       <Card
-        title="Low latency"
-        content="Real time display with millisecond level delay, maintaining smooth image in weak network environment, meeting the real-time command requirements of critical security scenarios."
+        title="低延迟"
+        content="毫秒级延迟实时展示，弱网环境下仍保持画面流畅，满足关键安防场景的实时指挥需求。"
       />
       <Card
-        title="High pixel"
-        content="4KHD with millions of pixels, outputting lossless image quality, everything is under control."
+        title="高像素"
+        content="4KHD 千万像素，输出无损画质，一切尽在掌握。"
       />
       <Card
-        title="Deep learning"
-        content="Intelligent algorithms and scene adaptation enable precise recognition, prediction, and automated decision-making."
+        title="深度学习"
+        content="智能算法，场景自适应，实现精准识别、预测与自动化决策。"
       />
       <Card
-        title="AR Enhancement"
-        content="Virtual real integration, immersive interactive experience, creating multi domain visualization solutions."
+        title="AR增强"
+        content="虚实融合，沉浸式交互体验，打造多领域可视化解决方案。"
       />
     </CardContainer>
   </div>
 </template>
  
 <script>
-import ImageOverlay from '/Pano/components/ImageOverlay.vue'
-import CardContainer from '/Pano/components/CardContainer.vue'
-import Card from '/Pano/components/Card.vue'
+import ImageOverlay from '/zh/Pano/components/ImageOverlay.vue'
+import CardContainer from '/zh/Pano/components/CardContainer.vue'
+import Card from '/zh/Pano/components/Card.vue'
 
 export default {
   mounted() {
@@ -72,11 +72,11 @@ export default {
   methods: {
     // 了解更多
     LearnMore() {
-      window.location.href = "/Pano/Document/what-is-pano"
+      window.location.href = "/zh/Pano/Document/what-is-pano"
     },
     // 联系我们
     ContactUs() {
-      window.location.href = "/Pano/Document/contact-us"
+      window.location.href = "/zh/Pano/Document/contact-us"
     }
   },
   components: {
