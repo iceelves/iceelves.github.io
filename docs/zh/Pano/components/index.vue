@@ -160,5 +160,9 @@ export default {
   .hero-description {
     font-size: 1rem;
   }
+  .hero-overlay {
+    aspect-ratio: 4 / 3;
+    height: auto;
+  }
 }
 </style>

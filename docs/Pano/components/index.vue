@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <CardContainer title="技术应用">
+    <CardContainer title="Technology Application">
       <Card
         title="RTSP/RTMP"
         content="Support mainstream real-time streaming protocols for low latency real-time transmission of audio and video streams."
@@ -159,6 +159,10 @@ export default {
   }
   .hero-description {
     font-size: 1rem;
+  }
+  .hero-overlay {
+    aspect-ratio: 4 / 3;
+    height: auto;
   }
 }
 </style>
