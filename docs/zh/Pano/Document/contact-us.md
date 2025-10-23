@@ -367,6 +367,22 @@ fieldset {
   text-align: center;
   white-space: nowrap;
 }
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .fs-form {
+    grid-template-columns: 1fr;
+  }
+  
+  .fs-button-group {
+    flex-direction: column-reverse;
+    row-gap: 0.75rem;
+  }
+  
+  .fs-button {
+    width: 100%;
+  }
+}
 </style>
  
 <br />
