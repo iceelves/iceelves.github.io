@@ -122,7 +122,7 @@ export default {
 /* 移动端适配 */
 @media (max-width: 768px) {
   .image-overlay-container {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 9;
     height: auto;
   }
 }

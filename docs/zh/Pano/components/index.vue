@@ -161,7 +161,7 @@ export default {
     font-size: 1rem;
   }
   .hero-overlay {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 9;
     height: auto;
   }
 }
