@@ -10,7 +10,7 @@
 
     <div class="hero-overlay">
       <div class="hero-content">
-        <h1 class="hero-title">Panoramic video surveillance</h1>
+        <h1 class="hero-title">Panoramic Video Stitching</h1>
         <p class="hero-description">
           Bringing you a different surveillance screen, allowing you to see more and see further.
         </p>

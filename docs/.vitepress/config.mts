@@ -34,6 +34,8 @@ export default defineConfig({
           items: [
             { text: 'What is Pano video stitching', link: '/Pano/Document/what-is-pano.html' },
             { text: 'Create a Pano video', link: '/Pano/Document/create-pano.html' },
+            { text: 'Other Config', link: '/Pano/Document/other-config.html' },
+            { text: 'Custom Development', link: '/Pano/Document/custom-development.html' },
             { text: 'Contact Us', link: '/Pano/Document/contact-us.html' }
           ]
         }
@@ -98,6 +100,8 @@ export default defineConfig({
               items: [
                 { text: '什么是全景视频拼接', link: '/zh/Pano/Document/what-is-pano.html' },
                 { text: '创建一个全景视频', link: '/zh/Pano/Document/create-pano.html' },
+                { text: '其他配置', link: '/zh/Pano/Document/other-config.html' },
+                { text: '定制开发', link: '/zh/Pano/Document/custom-development.html' },
                 { text: '联系我们', link: '/zh/Pano/Document/contact-us.html' }
               ]
             }

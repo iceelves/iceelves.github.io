@@ -10,7 +10,7 @@
 
     <div class="hero-overlay">
       <div class="hero-content">
-        <h1 class="hero-title">全景视频监控</h1>
+        <h1 class="hero-title">全景视频拼接</h1>
         <p class="hero-description">
           带给你不一样的监控画面，看到的更多，看到的更远。
         </p>
