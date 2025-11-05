@@ -1,7 +1,5 @@
 # How to create a panoramic video
 ## Infrastructure
-Zero customization cost installation, seamless compatibility with RTSP and Onvif protocols for security cameras, covering over 95% of global brand devices without the need to replace existing hardware or purchase dedicated terminals.
-
 Select 2-12 cameras of the same brand, model, resolution, and focal length as much as possible, install them in a fan-shaped arrangement, and overlay ≥ 10%~≤ 90% of the images between adjacent cameras for splicing. Fix them on the load-bearing structure of monitoring equipment such as walls or gantry frames to avoid image shaking caused by natural environment.
 
 ![Deployment of surveillance cameras](/Pano/CameraDeployment.jpg)

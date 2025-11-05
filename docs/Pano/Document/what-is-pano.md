@@ -1,6 +1,8 @@
 # What is Pano Video Stitching
 [Panoramic video stitching](/Pano/) is an innovative monitoring solution based on computer vision, graphics, and multi-sensor fusion technology. Its core lies in real-time stitching of video streams with overlapping areas captured by multiple cameras into seamless panoramic images through software algorithms, forming ultra wide viewing angles or stereoscopic monitoring scenes. This technology breaks through the limitations of traditional single camera viewing angles, eliminates image fragmentation and information silos, and achieves dynamic perception of large scenes with "one screen overview".
 
+Zero customization cost for installation, no need to replace existing hardware or purchase dedicated terminals. The video quality depends on the selected camera quality, seamlessly compatible with RTSP and Onvif protocols for security cameras, covering over 95% of global brand devices.
+
 <script>
 import ImageOverlay from '/zh/Pano/components/ImageOverlay.vue'
 
