@@ -9,7 +9,13 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      {
+        text: 'Product',
+        items: [
+          { text: 'Easy Deploy', link: '/EasyDeploy/' },
+          { text: 'Pano Stitching', link: '/Pano/' }
+        ],
+      }
     ],
 
     sidebar: {
@@ -70,7 +76,13 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '首页', link: '/zh/' },
-          { text: '例子', link: '/markdown-examples' }
+          {
+            text: '产品',
+            items: [
+              { text: '轻松部署', link: '/zh/EasyDeploy/' },
+              { text: '全景拼接', link: '/zh/Pano/' }
+            ],
+          }
         ],
         // 页脚
         footer: {
