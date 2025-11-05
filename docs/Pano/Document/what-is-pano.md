@@ -32,3 +32,10 @@ export default {
     ]" 
     :duration="5000"
 />
+
+
+## Do you want to further understand?
+- 👉 [Create a Panoramic video](/zh/Pano/Document/create-pano)
+- ⚙️ [Other Config](/zh/Pano/Document/other-config)
+- 🧩 [Custom Development](/zh/Pano/Document/custom-development)
+- 📞 [Contact Us](/zh/Pano/Document/contact-us)
