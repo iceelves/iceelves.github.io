@@ -1,5 +1,14 @@
 # Contact Us
 
+<script>
+  fetch('https://api.ipify.org?format=json')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('ip_address').value = data.ip;
+    })
+    .catch(error => console.error('Error fetching IP address:', error));
+</script>
+
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
@@ -433,14 +442,7 @@ fieldset {
   </div>
   <div class="fs-checkbox-field col-span-full">
     <div class="fs-checkbox-wrapper">
-      <input
-        class="fs-checkbox"
-        id="dpa-consent"
-        name="dpa-consent"
-        required
-        type="checkbox"
-        value="consent"
-      />
+      <input class="fs-checkbox" id="dpa-consent" name="dpa-consent" required type="checkbox" value="consent" />
     </div>
     <div>
       <label class="fs-label" for="dpa-consent">
@@ -448,6 +450,7 @@ fieldset {
         to answer your request. 
       </label>
     </div>
+    <input type="hidden" name="ip_address" id="ip_address">
   </div>
   <div class="fs-button-group">
     <button class="fs-button" type="submit">Submit</button>

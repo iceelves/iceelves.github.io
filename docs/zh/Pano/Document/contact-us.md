@@ -1,5 +1,14 @@
 # 联系我们
 
+<script>
+  fetch('https://api.ipify.org?format=json')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('ip_address').value = data.ip;
+    })
+    .catch(error => console.error('Error fetching IP address:', error));
+</script>
+
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
@@ -435,6 +444,7 @@ fieldset {
         您同意将收集和处理您在表格中的数据回答您的请求。
       </label>
     </div>
+    <input type="hidden" name="ip_address" id="ip_address">
   </div>
   <div class="fs-button-group">
     <button class="fs-button" type="submit">提交</button>
