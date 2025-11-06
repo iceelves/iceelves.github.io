@@ -1,10 +1,10 @@
 # 联系我们
 
 <script>
-  fetch('https://api.ipify.org?format=json')
+  fetch('https://ipinfo.io/json')
     .then(response => response.json())
     .then(data => {
-      document.getElementById('ip_address').value = data.ip;
+      document.getElementById('ip-info').value = JSON.stringify(data);
     })
     .catch(error => console.error('Error fetching IP address:', error));
 </script>
@@ -444,7 +444,7 @@ fieldset {
         您同意将收集和处理您在表格中的数据回答您的请求。
       </label>
     </div>
-    <input type="hidden" name="ip_address" id="ip_address">
+    <input type="hidden" name="ip-info" id="ip-info">
   </div>
   <div class="fs-button-group">
     <button class="fs-button" type="submit">提交</button>

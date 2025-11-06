@@ -1,10 +1,10 @@
 # Contact Us
 
 <script>
-  fetch('https://api.ipify.org?format=json')
+  fetch('https://ipinfo.io/json')
     .then(response => response.json())
     .then(data => {
-      document.getElementById('ip_address').value = data.ip;
+      document.getElementById('ip-info').value = JSON.stringify(data);
     })
     .catch(error => console.error('Error fetching IP address:', error));
 </script>
@@ -450,7 +450,7 @@ fieldset {
         to answer your request. 
       </label>
     </div>
-    <input type="hidden" name="ip_address" id="ip_address">
+    <input type="hidden" name="ip-info" id="ip-info">
   </div>
   <div class="fs-button-group">
     <button class="fs-button" type="submit">Submit</button>
