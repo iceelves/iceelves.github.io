@@ -88,14 +88,6 @@ export default {
 </script>
  
 <style>
-::selection {
-  background-color: #404042;
-}
-
-::-moz-selection {
-  background-color: #404042;
-}
-
 .hero-overlay {
   position: absolute;
   top: 0;

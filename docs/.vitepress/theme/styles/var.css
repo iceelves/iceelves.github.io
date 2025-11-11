@@ -6,3 +6,12 @@
 .VPFeatures .items .item:hover {
   transform: translateY(-5px);
 }
+
+/* 鼠标选中颜色 */
+::selection {
+  background-color: #404042;
+}
+
+::-moz-selection {
+  background-color: #404042;
+}
