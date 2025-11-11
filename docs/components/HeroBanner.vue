@@ -132,7 +132,6 @@ onBeforeUnmount(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--vp-c-text-1);
 }
 
 .background-canvas {
@@ -147,6 +146,7 @@ onBeforeUnmount(() => {
   position: relative;
   text-align: center;
   z-index: 1;
+  color: var(--vp-c-text-1);
 }
 
 .title-block {
