@@ -37,7 +37,7 @@ export default {
 
 
 ## Do you want to further understand?
-- 👉 [Create a Panoramic video](/zh/Pano/Document/create-pano)
-- ⚙️ [Other Config](/zh/Pano/Document/other-config)
-- 🧩 [Custom Development](/zh/Pano/Document/custom-development)
-- 📞 [Contact Us](/zh/Pano/Document/contact-us)
+- 👉 [Create a Panoramic video](/Pano/Document/create-pano)
+- ⚙️ [Other Config](/Pano/Document/other-config)
+- 🧩 [Custom Development](/Pano/Document/custom-development)
+- 📞 [Contact Us](/Pano/Document/contact-us)

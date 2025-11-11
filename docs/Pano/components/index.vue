@@ -14,8 +14,8 @@
         <p class="hero-description">
           Bringing you a different surveillance screen, allowing you to see more and see further.
         </p>
-        <button class="hero-button" @click="LearnMore">Learn more</button>
-        <button class="hero-button" @click="ContactUs">Contact Us</button>
+        <button class="btn btn-primary" @click="LearnMore">Learn more</button>
+        <button class="btn btn-secondary" @click="ContactUs">Contact Us</button>
       </div>
     </div>
 
@@ -88,6 +88,14 @@ export default {
 </script>
  
 <style>
+::selection {
+  background-color: #404042;
+}
+
+::-moz-selection {
+  background-color: #404042;
+}
+
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -102,7 +110,7 @@ export default {
 }
  
 .hero-content {
-  max-width: 800px;
+  max-width: 830px;
   padding: 2rem;
   text-align: center;
   color: white;
@@ -122,35 +130,37 @@ export default {
 }
  
 /* 基础按钮样式 */
-.hero-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 36px;
-  padding: 0 16px;
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  user-select: none;
-  white-space: nowrap;
-  line-height: 1;
-  color: #fff;
-  background-color: #409eff;
-  border: 1px solid #409eff;
-  margin-left: 20px;
-  margin-right: 20px;
+.btn {
+  display: inline-block;
+  padding: 0.4rem 1.4rem;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0rem 2rem;
+  transition: all 0.3s ease;
 }
- 
-.hero-button:hover {
-  background-color: #66b1ff;
-  border-color: #66b1ff;
+
+.btn-primary {
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 165, 233, 0.3);
 }
- 
-.hero-button:active {
-  background-color: #3a8ee6;
-  border-color: #3a8ee6;
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(0, 165, 233, 0.5);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.7);
+  color: #106ba8;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.6);
 }
  
 @media (max-width: 768px) {
