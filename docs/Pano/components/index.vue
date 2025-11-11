@@ -129,6 +129,7 @@ export default {
   text-decoration: none;
   margin: 0rem 2rem;
   transition: all 0.3s ease;
+  font-size: 14px;
 }
 
 .btn-primary {
