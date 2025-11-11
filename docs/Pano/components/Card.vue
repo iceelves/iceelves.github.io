@@ -61,7 +61,7 @@ const props = defineProps({
 }
 
 .card-content {
-  color: var(--vp-c-text-1);;
+  color: var(--vp-c-text-1);
   line-height: 1.6;
   margin-bottom: 25px;
   transform: translateZ(10px);

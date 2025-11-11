@@ -132,7 +132,7 @@ onBeforeUnmount(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--vp-c-text);
+  color: var(--vp-c-text-1);
 }
 
 .background-canvas {
