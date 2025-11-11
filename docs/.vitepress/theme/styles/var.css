@@ -7,11 +7,11 @@
   transform: translateY(-5px);
 }
 
-/* 鼠标选中颜色 */
+/* 鼠标拖动选中时改变颜色 */
 ::selection {
-  background-color: #404042;
+  background-color: rgba(128, 128, 128, 0.4);
 }
 
 ::-moz-selection {
-  background-color: #404042;
+  background-color: rgba(128, 128, 128, 0.4);
 }

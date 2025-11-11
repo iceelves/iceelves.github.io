@@ -102,7 +102,6 @@ export default {
 }
  
 .hero-content {
-  max-width: 830px;
   padding: 2rem;
   text-align: center;
   color: white;
