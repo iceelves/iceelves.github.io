@@ -157,7 +157,8 @@ onBeforeUnmount(() => {
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
-  white-space: nowrap;
+  white-space: pre-wrap;       /* 保留空格并允许在空格处换行 */
+  word-break: keep-all;        /* 不在中文或单词中间断开 */
 }
 
 .subtitle-block {
@@ -168,24 +169,5 @@ onBeforeUnmount(() => {
   font-size: 1.25rem;
   line-height: 1.6;
   color: var(--vp-c-text-secondary);
-}
-
-/* 移动端适配 */
-@media (max-width: 768px) {
-  .title-line {
-    white-space: pre-wrap;
-    word-break: keep-all;
-  }
-  /* 清理多余空格显示（可选） */
-  .title-line::before {
-    content: ''; 
-  }
-  /* 把空格换成换行 */
-  .title-line {
-    display: inline-block;
-  }
-  .title-line::after {
-    content: '';
-  }
 }
 </style>
