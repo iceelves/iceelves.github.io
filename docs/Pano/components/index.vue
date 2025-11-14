@@ -154,7 +154,8 @@ export default {
   background: rgba(255, 255, 255, 0.8);
   border-color: rgba(255, 255, 255, 0.6);
 }
- 
+
+/* 移动端适配 */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2rem;
