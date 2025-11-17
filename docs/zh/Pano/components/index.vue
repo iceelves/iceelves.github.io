@@ -12,7 +12,7 @@
       <div class="hero-content">
         <h1 class="hero-title">全景视频拼接</h1>
         <p class="hero-description">
-          带给你不一样的监控画面，看到的更多，看到的更远。
+          多路摄像头实时融合，无缝覆盖大场景，让监控更清晰、更高效、更智能。
         </p>
         <button class="btn btn-primary" @click="LearnMore">了解更多</button>
         <button class="btn btn-secondary" @click="ContactUs">联系我们</button>

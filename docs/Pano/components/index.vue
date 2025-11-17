@@ -12,7 +12,7 @@
       <div class="hero-content">
         <h1 class="hero-title">Panoramic Video Stitching</h1>
         <p class="hero-description">
-          Bringing you a different surveillance screen, allowing you to see more and see further.
+          Real time fusion of multiple cameras seamlessly covers large scenes, making monitoring clearer, more efficient, and more intelligent.
         </p>
         <button class="btn btn-primary" @click="LearnMore">Learn more</button>
         <button class="btn btn-secondary" @click="ContactUs">Contact Us</button>
