@@ -102,7 +102,7 @@ export default {
 }
  
 .hero-content {
-  padding: 2rem;
+  padding: 10px;
   text-align: center;
   color: white;
 }
