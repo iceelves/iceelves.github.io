@@ -42,6 +42,11 @@ const props = defineProps({
   transform-style: preserve-3d;
 }
 
+/* 中文修改内边框 */
+:lang(zh) .card {
+  padding: 30px;
+}
+
 .card:hover {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 }
