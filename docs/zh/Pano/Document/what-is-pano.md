@@ -37,6 +37,7 @@ export default {
 
 ## 想进一步了解？
 - 👉 [创建一个全景视频](/zh/Pano/Document/create-pano)
-- ⚙️ [其他配置](/zh/Pano/Document/other-config)
+- ⚙️ [更多设置](/zh/Pano/Document/more-settings)
+- 📺 [全景投屏](/zh/Pano/Document/pano-player)
 - 🧩 [定制开发](/zh/Pano/Document/custom-development)
 - 📞 [联系我们](/zh/Pano/Document/contact-us)

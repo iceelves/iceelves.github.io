@@ -38,6 +38,7 @@ export default {
 
 ## Do you want to further understand?
 - 👉 [Create a Panoramic video](/Pano/Document/create-pano)
-- ⚙️ [Other Config](/Pano/Document/other-config)
+- ⚙️ [More Settings](/Pano/Document/more-settings)
+- 📺 [Pano Player](/Pano/Document/pano-player)
 - 🧩 [Custom Development](/Pano/Document/custom-development)
 - 📞 [Contact Us](/Pano/Document/contact-us)

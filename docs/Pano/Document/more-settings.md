@@ -1,4 +1,4 @@
-# Other Config
+# More Settings
 Before enabling panoramic video stitching, some work needs to be done.
 ![Stitching Config](/Pano/StitchingConfig.jpg)
 
