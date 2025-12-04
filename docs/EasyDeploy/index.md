@@ -1,6 +1,10 @@
 ---
 layout: home
 
+title: Easy Deploy
+description: Easily deploy multiple application service environments in Windows.
+keywords: Easy Deploy
+
 hero:
   name: Easy Deploy
   text: Easily deploy multiple application service environments in Windows.

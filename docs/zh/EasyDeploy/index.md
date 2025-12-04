@@ -1,6 +1,10 @@
 ---
 layout: home
 
+title: 轻松部署
+description: 在 Windows 中轻松部署多个应用服务环境
+keywords: 轻松部署
+
 hero:
   name: 轻松部署
   text: 在 Windows 中轻松部署多个应用服务环境
