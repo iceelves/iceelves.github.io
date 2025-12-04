@@ -1,3 +1,9 @@
+---
+title: How to create a panoramic video
+description: Panoramic video stitching can merge videos captured by multiple cameras into immersive wide format images, which are widely used in scenes such as schools, parks, squares, sports venues, airports, and ports. Real time fusion of multiple cameras, panoramic video security platform, customized development.
+keywords: Panoramic Video Stitching,Real time fusion of multiple cameras,Panoramic video security platform
+---
+
 # How to create a panoramic video
 ## Infrastructure
 Select 2-12 cameras of the same brand, model, resolution, and focal length as much as possible, install them in a fan-shaped arrangement, and overlay ≥ 10%~≤ 90% of the images between adjacent cameras for splicing. Fix them on the load-bearing structure of monitoring equipment such as walls or gantry frames to avoid image shaking caused by natural environment.

@@ -1,3 +1,9 @@
+---
+title: What is Panoramic Video Stitching
+description: Panoramic video stitching can merge videos captured by multiple cameras into immersive wide format images, which are widely used in scenes such as schools, parks, squares, sports venues, airports, and ports. Real time fusion of multiple cameras, panoramic video security platform, customized development.
+keywords: Panoramic Video Stitching,Real time fusion of multiple cameras,Panoramic video security platform
+---
+
 # What is Pano Video Stitching
 [Panoramic video stitching](/Pano/) is an innovative monitoring solution based on computer vision, graphics, and multi-sensor fusion technology. Its core lies in real-time stitching of video streams with overlapping areas captured by multiple cameras into seamless panoramic images through software algorithms, forming ultra wide viewing angles or stereoscopic monitoring scenes. This technology breaks through the limitations of traditional single camera viewing angles, eliminates image fragmentation and information silos, and achieves dynamic perception of large scenes with "one screen overview".
 

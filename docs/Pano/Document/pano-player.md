@@ -1,3 +1,9 @@
+---
+title: Panoramic Player
+description: Panoramic video stitching can merge videos captured by multiple cameras into immersive wide format images, which are widely used in scenes such as schools, parks, squares, sports venues, airports, and ports. Real time fusion of multiple cameras, panoramic video security platform, customized development.
+keywords: Panoramic Video Stitching,Real time fusion of multiple cameras,Panoramic video security platform
+---
+
 # Panoramic Player
 Panoramic video is input through multiple or single channels, decoded through panoramic stitching or using local decoding to achieve low latency stitching display. Based on the physical layout of the spliced screen and the actual resolution of each screen, the system performs high-precision area cropping on the panorama and completes multi window mapping.
 
