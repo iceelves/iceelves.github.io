@@ -1,57 +1,50 @@
-import { glob } from 'glob'
-import { createWriteStream } from 'fs'
-import { SitemapStream } from 'sitemap'
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-// 域名 不带斜杠
-const siteUrl = 'https://iceelves.com'
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-async function generateSitemap() {
-  // 扫描所有 Markdown 文件（排除 README）
-  const pages = await glob('docs/**/*.md', {
-    ignore: ['**/node_modules/**', '**/README.md']
-  })
+// 你的域名（不要加结尾斜杠）
+const domain = 'https://iceelves.com';
 
-  const sitemap = new SitemapStream({ hostname: siteUrl })
-  const writeStream = createWriteStream('docs/.vitepress/dist/sitemap.xml')
-  sitemap.pipe(writeStream)
+// dist 路径
+const distPath = path.resolve(__dirname, '../docs/.vitepress/dist');
 
-  pages.forEach((page) => {
-    let url = page
-      .replace('docs/', '')
-      .replace(/\.md$/, '')
-      .replace(/index$/, '')
+// 递归读取 dist 中所有 HTML 文件
+function readPages(dir) {
+  let list = fs.readdirSync(dir);
+  let results = [];
 
-    // 根路径特殊处理
-    if (url === '') url = '/'
+  list.forEach(file => {
+    const fullPath = path.join(dir, file);
+    const stat = fs.statSync(fullPath);
 
-    // 添加英文和中文映射 hreflang
-    const links = []
-
-    if (url.startsWith('zh/')) {
-      links.push({
-        lang: 'en', url: url.replace('zh/', '')
-      })
-      links.push({
-        lang: 'zh', url
-      })
-    } else {
-      links.push({
-        lang: 'en', url
-      })
-      links.push({
-        lang: 'zh', url: 'zh/' + url.replace(/^\//, '')
-      })
+    if (stat.isDirectory()) {
+      results = results.concat(readPages(fullPath));
+    } else if (file.endsWith('.html')) {
+      results.push(fullPath);
     }
+  });
 
-    sitemap.write({
-      url,
-      links,
-      lastmod: new Date().toISOString()
-    })
-  })
-
-  sitemap.end()
-  writeStream.on('finish', () => console.log('sitemap.xml generated!'))
+  return results;
 }
 
-generateSitemap()
+const pages = readPages(distPath).map(file =>
+  file.replace(distPath, '') // 去掉绝对路径
+);
+
+// 生成 sitemap.xml
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${pages.map(p => `
+  <url>
+    <loc>${domain}${p}</loc>
+    <lastmod>${new Date().toISOString()}</lastmod>
+  </url>`).join('')}
+</urlset>`;
+
+// 写入文件
+fs.writeFileSync(path.join(distPath, 'sitemap.xml'), sitemap);
+
+console.log('✔ sitemap.xml generated.');
