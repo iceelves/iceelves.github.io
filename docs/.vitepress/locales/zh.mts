@@ -49,6 +49,11 @@ export default {
             ]
         },
 
+        // 社交链接
+        socialLinks: [
+            { icon: 'github', link: 'https://github.com/iceelves' }
+        ],
+
         // 页脚
         footer: {
             message: '北京冰云信息科技有限公司',
