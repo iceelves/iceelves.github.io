@@ -47,6 +47,13 @@ jobs:
         run: npm ci # 或 pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: npm run docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+
+      # 复制 CNAME 和 robots.txt 到 dist 根目录
+      - name: Copy CNAME & robots.txt
+        run: |
+          if [ -f CNAME ]; then cp CNAME docs/.vitepress/dist/; fi
+          if [ -f robots.txt ]; then cp robots.txt docs/.vitepress/dist/; fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
