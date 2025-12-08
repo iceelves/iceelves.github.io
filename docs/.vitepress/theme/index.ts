@@ -31,10 +31,12 @@ export default {
   }
 } satisfies Theme
 
-// 统计访问量
-fetch(`https://api.counterapi.dev/v2/ceshis-team-1553/first-counter-1553/up`)
-  .then(res => res.json())
-  .catch(err => console.error('CounterAPI Error:', err))
+if (typeof window !== 'undefined') {
+  // 统计访问量
+  fetch(`https://api.counterapi.dev/v2/ceshis-team-1553/first-counter-1553/up`)
+    .then(res => res.json())
+    .catch(err => console.error('CounterAPI Error:', err))
+}
 
 console.log("")
 console.log('  \u001b[96m$$$$$$\\ \u001b[93m         \u001b[92m              \u001b[96m$$$$$$$$\\ \u001b[93m$$\\ \u001b[92m           \u001b[91m          \u001b[95m          ')

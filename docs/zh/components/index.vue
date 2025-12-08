@@ -1,15 +1,11 @@
 <template>
-  <HeroBanner
-  :titleLines="['未来科技 引领创新']"
-  :subtitleLines="['专注于高性能软件开发和智能解决方案']"/>
+  <HeroBanner :titleLines="['未来科技 引领创新']" :subtitleLines="['专注于高性能软件开发和智能解决方案']" />
 
   <div class="padding-height"></div>
   <div class="padding-height"></div>
   <div class="padding-height"></div>
 
-  <AlternatingImageText
-    imgSrc="/Index/Technology.jpg"
-  >
+  <AlternatingImageText imgSrc="/Index/Technology.jpg">
     <h2>技术驱动</h2>
     <div class="padding-height"></div>
     <div class="padding-height"></div>
@@ -17,10 +13,7 @@
     <p>通过智能化的软件系统，为业务决策提供更快、更准的数据支持。</p>
   </AlternatingImageText>
 
-  <AlternatingImageText
-    imgSrc="/Index/Customize.jpg"
-    :reverse="true"
-  >
+  <AlternatingImageText imgSrc="/Index/Customize.jpg" :reverse="true">
     <h2>定制化解决方案</h2>
     <div class="padding-height"></div>
     <div class="padding-height"></div>
@@ -28,9 +21,7 @@
     <p>打造真正符合企业流程的数字化解决方案。</p>
   </AlternatingImageText>
 
-  <AlternatingImageText
-    imgSrc="/Index/Stable.jpg"
-  >
+  <AlternatingImageText imgSrc="/Index/Stable.jpg">
     <h2>稳定架构</h2>
     <div class="padding-height"></div>
     <div class="padding-height"></div>
@@ -38,10 +29,7 @@
     <p>模块化架构支持未来扩展，降低运营成本。</p>
   </AlternatingImageText>
 
-  <AlternatingImageText
-    imgSrc="/Index/Safety.jpg"
-    :reverse="true"
-  >
+  <AlternatingImageText imgSrc="/Index/Safety.jpg" :reverse="true">
     <h2>系统安全</h2>
     <div class="padding-height"></div>
     <div class="padding-height"></div>
@@ -49,7 +37,7 @@
     <p>符合企业级安全规范，并支持多级安全策略。</p>
   </AlternatingImageText>
 </template>
- 
+
 <script>
 import HeroBanner from '/components/HeroBanner.vue'
 import AlternatingImageText from '/components/AlternatingImageText.vue'
@@ -67,7 +55,7 @@ export default {
   }
 };
 </script>
- 
+
 <style>
 .padding-height {
   height: 20px;

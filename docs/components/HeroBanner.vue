@@ -157,8 +157,10 @@ onBeforeUnmount(() => {
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
-  white-space: pre-wrap;       /* 保留空格并允许在空格处换行 */
-  word-break: keep-all;        /* 不在中文或单词中间断开 */
+  white-space: pre-wrap;
+  /* 保留空格并允许在空格处换行 */
+  word-break: keep-all;
+  /* 不在中文或单词中间断开 */
 }
 
 .subtitle-block {

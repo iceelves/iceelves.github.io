@@ -30,18 +30,36 @@ function readPages(dir) {
   return results;
 }
 
+// 格式化 URL，去除 index.html 并去掉 .html 扩展名
 const pages = readPages(distPath).map(file =>
-  file.replace(distPath, '') // 去掉绝对路径
+  file
+    .replace(distPath, '')               // 去掉 dist 绝对路径
+    .replace(/\\/g, '/')                 // 把 \ 转成 /
+    .replace(/\/index\.html$/, '/')      // 去除 /index.html
+    .replace(/\.html$/, '')              // 去除 .html 扩展名
 );
+
+// 设置页面的优先级
+const getPriority = (page) => {
+  if (page === '/' || page === '/zh/' || page === '/Pano/' || page === '/zh/Pano/') {
+    return 1.0; // 根目录优先级最高
+  } else {
+    return 0.9; // 默认优先级
+  }
+};
 
 // 生成 sitemap.xml
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${pages.map(p => `
+${pages.map(p => {
+  const priority = getPriority(p); // 根据页面路径设置优先级
+  return `
   <url>
     <loc>${domain}${p}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
-  </url>`).join('')}
+    <priority>${priority}</priority>
+  </url>`;
+}).join('')}
 </urlset>`;
 
 // 写入文件

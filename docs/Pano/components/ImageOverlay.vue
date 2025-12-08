@@ -1,14 +1,8 @@
 <template>
   <div class="image-overlay-container">
     <transition-group name="fade" tag="div">
-      <img 
-        v-for="(image, index) in images" 
-        v-show="currentIndex === index"
-        :key="image"
-        :src="image" 
-        class="overlay-image" 
-        :alt="'Image ' + (index + 1)"
-      />
+      <img v-for="(image, index) in images" v-show="currentIndex === index" :key="image" :src="image"
+        class="overlay-image" :alt="'Image ' + (index + 1)" />
     </transition-group>
   </div>
 </template>
@@ -50,7 +44,7 @@ export default {
       if (this.currentIndex >= this.images.length) {
         this.currentIndex = 0;
       }
-      
+
       this.timer = setInterval(() => {
         this.currentIndex = (this.currentIndex + 1) % this.images.length;
       }, this.duration);
@@ -107,10 +101,13 @@ export default {
 }
 
 /* 淡入淡出动画 */
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 1.5s ease-in-out;
 }
-.fade-enter-from, .fade-leave-to {
+
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
 }
 

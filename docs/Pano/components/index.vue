@@ -1,18 +1,16 @@
 <template>
   <div>
-    <ImageOverlay 
-      :images="[
-        '/Pano/pano1.jpg',
-        '/Pano/pano2.jpg'
-      ]" 
-      :duration="5000"
-    />
+    <ImageOverlay :images="[
+      '/Pano/pano1.jpg',
+      '/Pano/pano2.jpg'
+    ]" :duration="5000" />
 
     <div class="hero-overlay">
       <div class="hero-content">
         <h1 class="hero-title">Panoramic Video Stitching</h1>
         <p class="hero-description">
-          Real time fusion of multiple cameras seamlessly covers large scenes, making monitoring clearer, more efficient, and more intelligent.
+          Real time fusion of multiple cameras seamlessly covers large scenes, making monitoring clearer, more
+          efficient, and more intelligent.
         </p>
         <button class="btn btn-primary" @click="LearnMore">Learn more</button>
         <button class="btn btn-secondary" @click="ContactUs">Contact Us</button>
@@ -20,46 +18,28 @@
     </div>
 
     <CardContainer title="Technology Application">
-      <Card
-        title="RTSP/RTMP"
-        content="Support mainstream real-time streaming protocols for low latency real-time transmission of audio and video streams."
-      />
-      <Card
-        title="ONVIF"
-        content="Support common open protocols in the security industry, cross brand device interconnection, video streaming transmission, PTZ control, etc."
-      />
-      <Card
-        title="CUDA"
-        content="Utilizing the powerful computing power of GPU to accelerate video processing and significantly improving real-time processing performance through CUDA core."
-      />
-      <Card
-        title="MP4/FLV"
-        content="Support mainstream audio and video protocol storage, select downloads in different time periods, convenient, fast, and widely compatible."
-      />
-      <Card
-        title="H.264/HEVC"
-        content="Supports mainstream video compression technologies, significantly reducing bandwidth usage while maintaining high-definition image quality."
-      />
-      <Card
-        title="Low latency"
-        content="Real time display with millisecond level delay, maintaining smooth image in weak network environment, meeting the real-time command requirements of critical security scenarios."
-      />
-      <Card
-        title="High pixel"
-        content="4KHD with millions of pixels, outputting lossless image quality, everything is under control."
-      />
-      <Card
-        title="Deep learning"
-        content="Intelligent algorithms and scene adaptation enable precise recognition, prediction, and automated decision-making."
-      />
-      <Card
-        title="AR Enhancement"
-        content="Virtual real integration, immersive interactive experience, creating multi domain visualization solutions."
-      />
+      <Card title="RTSP/RTMP"
+        content="Support mainstream real-time streaming protocols for low latency real-time transmission of audio and video streams." />
+      <Card title="ONVIF"
+        content="Support common open protocols in the security industry, cross brand device interconnection, video streaming transmission, PTZ control, etc." />
+      <Card title="CUDA"
+        content="Utilizing the powerful computing power of GPU to accelerate video processing and significantly improving real-time processing performance through CUDA core." />
+      <Card title="MP4/FLV"
+        content="Support mainstream audio and video protocol storage, select downloads in different time periods, convenient, fast, and widely compatible." />
+      <Card title="H.264/HEVC"
+        content="Supports mainstream video compression technologies, significantly reducing bandwidth usage while maintaining high-definition image quality." />
+      <Card title="Low latency"
+        content="Real time display with millisecond level delay, maintaining smooth image in weak network environment, meeting the real-time command requirements of critical security scenarios." />
+      <Card title="High pixel"
+        content="4KHD with millions of pixels, outputting lossless image quality, everything is under control." />
+      <Card title="Deep learning"
+        content="Intelligent algorithms and scene adaptation enable precise recognition, prediction, and automated decision-making." />
+      <Card title="AR Enhancement"
+        content="Virtual real integration, immersive interactive experience, creating multi domain visualization solutions." />
     </CardContainer>
   </div>
 </template>
- 
+
 <script>
 import ImageOverlay from '/Pano/components/ImageOverlay.vue'
 import CardContainer from '/Pano/components/CardContainer.vue'
@@ -86,7 +66,7 @@ export default {
   }
 };
 </script>
- 
+
 <style>
 .hero-overlay {
   position: absolute;
@@ -94,32 +74,34 @@ export default {
   left: 0;
   width: 100%;
   height: 450px;
-  background: rgba(0, 0, 0, 0.1); /* 半透明黑色蒙版 */
+  background: rgba(0, 0, 0, 0.1);
+  /* 半透明黑色蒙版 */
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10; /* 确保在 ImageOverlay 上方 */
+  z-index: 10;
+  /* 确保在 ImageOverlay 上方 */
 }
- 
+
 .hero-content {
   padding: 10px;
   text-align: center;
   color: white;
 }
- 
+
 .hero-title {
   font-size: 3rem;
   margin-bottom: 1rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
- 
+
 .hero-description {
   font-size: 1.2rem;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
- 
+
 /* 基础按钮样式 */
 .btn {
   display: inline-block;
@@ -160,9 +142,11 @@ export default {
   .hero-title {
     font-size: 2rem;
   }
+
   .hero-description {
     font-size: 1rem;
   }
+
   .hero-overlay {
     aspect-ratio: 16 / 9;
     height: auto;

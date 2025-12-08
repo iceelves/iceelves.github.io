@@ -1,12 +1,9 @@
 <template>
   <div>
-    <ImageOverlay 
-      :images="[
-        '/Pano/pano1.jpg',
-        '/Pano/pano2.jpg'
-      ]" 
-      :duration="5000"
-    />
+    <ImageOverlay :images="[
+      '/Pano/pano1.jpg',
+      '/Pano/pano2.jpg'
+    ]" :duration="5000" />
 
     <div class="hero-overlay">
       <div class="hero-content">
@@ -20,46 +17,19 @@
     </div>
 
     <CardContainer title="技术应用">
-      <Card
-        title="RTSP/RTMP"
-        content="支持主流实时流媒体传输协议，以低延迟实时传输音视频流。"
-      />
-      <Card
-        title="ONVIF"
-        content="支持安防行业通用的开放协议，跨品牌设备互联、视频流传输、PTZ 控制等。"
-      />
-      <Card
-        title="CUDA"
-        content="利用 GPU 强大算力加速视频处理，通过 CUDA 核心大幅提升实时处理性能。"
-      />
-      <Card
-        title="MP4/FLV"
-        content="支持主流音视频协议存储，分时段选择下载，方便快捷，兼容广泛。"
-      />
-      <Card
-        title="H.264/HEVC"
-        content="支持主流的视频压缩技术，显著降低带宽占用，同时保持高清画质。"
-      />
-      <Card
-        title="低延迟"
-        content="毫秒级延迟实时展示，弱网环境下仍保持画面流畅，满足关键安防场景的实时指挥需求。"
-      />
-      <Card
-        title="高像素"
-        content="4KHD 千万像素，输出无损画质，一切尽在掌握。"
-      />
-      <Card
-        title="深度学习"
-        content="智能算法，场景自适应，实现精准识别、预测与自动化决策。"
-      />
-      <Card
-        title="AR增强"
-        content="虚实融合，沉浸式交互体验，打造多领域可视化解决方案。"
-      />
+      <Card title="RTSP/RTMP" content="支持主流实时流媒体传输协议，以低延迟实时传输音视频流。" />
+      <Card title="ONVIF" content="支持安防行业通用的开放协议，跨品牌设备互联、视频流传输、PTZ 控制等。" />
+      <Card title="CUDA" content="利用 GPU 强大算力加速视频处理，通过 CUDA 核心大幅提升实时处理性能。" />
+      <Card title="MP4/FLV" content="支持主流音视频协议存储，分时段选择下载，方便快捷，兼容广泛。" />
+      <Card title="H.264/HEVC" content="支持主流的视频压缩技术，显著降低带宽占用，同时保持高清画质。" />
+      <Card title="低延迟" content="毫秒级延迟实时展示，弱网环境下仍保持画面流畅，满足关键安防场景的实时指挥需求。" />
+      <Card title="高像素" content="4KHD 千万像素，输出无损画质，一切尽在掌握。" />
+      <Card title="深度学习" content="智能算法，场景自适应，实现精准识别、预测与自动化决策。" />
+      <Card title="AR增强" content="虚实融合，沉浸式交互体验，打造多领域可视化解决方案。" />
     </CardContainer>
   </div>
 </template>
- 
+
 <script>
 import ImageOverlay from '/Pano/components/ImageOverlay.vue'
 import CardContainer from '/Pano/components/CardContainer.vue'
@@ -86,7 +56,7 @@ export default {
   }
 };
 </script>
- 
+
 <style>
 .hero-overlay {
   position: absolute;
@@ -94,32 +64,34 @@ export default {
   left: 0;
   width: 100%;
   height: 450px;
-  background: rgba(0, 0, 0, 0.1); /* 半透明黑色蒙版 */
+  background: rgba(0, 0, 0, 0.1);
+  /* 半透明黑色蒙版 */
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10; /* 确保在 ImageOverlay 上方 */
+  z-index: 10;
+  /* 确保在 ImageOverlay 上方 */
 }
- 
+
 .hero-content {
   padding: 10px;
   text-align: center;
   color: white;
 }
- 
+
 .hero-title {
   font-size: 3rem;
   margin-bottom: 1rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
- 
+
 .hero-description {
   font-size: 1.2rem;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
- 
+
 /* 基础按钮样式 */
 .btn {
   display: inline-block;
@@ -160,9 +132,11 @@ export default {
   .hero-title {
     font-size: 2rem;
   }
+
   .hero-description {
     font-size: 1rem;
   }
+
   .hero-overlay {
     aspect-ratio: 16 / 9;
     height: auto;
