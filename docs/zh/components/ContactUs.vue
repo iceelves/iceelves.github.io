@@ -1,4 +1,4 @@
-<template v-if="!mounted">
+<template>
     <form action="https://formspree.io/f/xdkwrvkj" class="fs-form fs-layout__2-column" target="_top" method="POST">
         <div class="fs-field">
             <label class="fs-label" for="business-area">业务</label>
@@ -55,12 +55,9 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-// mounted 用于区分 SSR / 客户端渲染
-const mounted = ref(false)
 const ipInfo = ref('');
 
 onMounted(() => {
-    mounted.value = true
     fetch('https://ipinfo.io/json')
         .then(res => res.json())
         .then(data => {
