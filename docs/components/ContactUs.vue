@@ -45,7 +45,7 @@
                     to answer your request.
                 </label>
             </div>
-            <input type="hidden" name="ip-info" id="ip-info">
+            <input type="hidden" name="ip-info" id="ip-info" :value="ipInfo">
         </div>
         <div class="fs-button-group">
             <button class="fs-button" type="submit">Submit</button>

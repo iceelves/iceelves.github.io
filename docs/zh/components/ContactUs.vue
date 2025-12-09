@@ -44,7 +44,7 @@
                     您同意将收集和处理您在表格中的数据回答您的请求。
                 </label>
             </div>
-            <input type="hidden" name="ip-info" id="ip-info">
+            <input type="hidden" name="ip-info" id="ip-info" :value="ipInfo">
         </div>
         <div class="fs-button-group">
             <button class="fs-button" type="submit">提交</button>

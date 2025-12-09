@@ -11,4 +11,6 @@ import ContactUs from '/zh/components/ContactUs.vue'
 </script>
 
 <br />
-<ContactUs />
+<ClientOnly>
+  <ContactUs />
+</ClientOnly>
