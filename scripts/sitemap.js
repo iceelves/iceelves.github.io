@@ -37,11 +37,14 @@ const pages = readPages(distPath).map(file =>
     .replace(/\\/g, '/')                 // 把 \ 转成 /
     .replace(/\/index\.html$/, '/')      // 去除 /index.html
     .replace(/\.html$/, '')              // 去除 .html 扩展名
-);
+)
+// 跟路径为跳转页面，去掉根路径 '/' 页面
+.filter(p => p !== '/');
 
 // 设置页面的优先级
 const getPriority = (page) => {
-  if (page === '/' || page === '/zh/' || page === '/Pano/' || page === '/zh/Pano/') {
+  if (page === '/en/' || page === '/zh/' ||
+    page === '/en/Pano/' || page === '/zh/Pano/') {
     return 1.0; // 根目录优先级最高
   } else {
     return 0.9; // 默认优先级

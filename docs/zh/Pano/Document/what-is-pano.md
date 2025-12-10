@@ -10,7 +10,7 @@ keywords: 全景视频拼接,多路摄像头实时融合,全景视频安防平�
 安装零定制成本，无需更换现有硬件或购买专用终端，视频画质取决于选择摄像机画质，无缝兼容 RTSP、Onvif 协议的安防摄像机，覆盖全球 95% 以上品牌设备。
 
 <script>
-import ImageOverlay from '/Pano/components/ImageOverlay.vue'
+import ImageOverlay from '/components/ImageOverlay.vue'
 
 export default {
   components: {

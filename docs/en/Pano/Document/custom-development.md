@@ -5,7 +5,7 @@ keywords: Panoramic Video Stitching,Real time fusion of multiple cameras,Panoram
 ---
 
 # Custom Development
-Relying on profound audio and video algorithms and image processing technology, we have built a complete solution system with [Panoramic video stitching](/Pano/) as the core, covering multiple aspects such as management、monitoring and screen casting.
+Relying on profound audio and video algorithms and image processing technology, we have built a complete solution system with [Panoramic video stitching](/en/Pano/) as the core, covering multiple aspects such as management、monitoring and screen casting.
 
 ![CustomDevelopment](/Pano/CustomDevelopment.jpg)
 

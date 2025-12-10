@@ -13,15 +13,6 @@ import './styles/index.css'
 export default {
   extends: DefaultTheme,
   Layout: () => {
-    // 检测语言是否需要重定向
-    const { lang } = useData();
-    if (typeof window !== 'undefined' && window.location.pathname === '/') {
-      switch (navigator.language.substring(0, 2)) {
-        case 'zh':
-          window.location.href = `/zh/`;
-      }
-    }
-
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })

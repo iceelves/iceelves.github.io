@@ -41,9 +41,9 @@
 </template>
 
 <script>
-import ImageOverlay from '/Pano/components/ImageOverlay.vue'
-import CardContainer from '/Pano/components/CardContainer.vue'
-import Card from '/Pano/components/Card.vue'
+import ImageOverlay from '/components/ImageOverlay.vue'
+import CardContainer from '/components/CardContainer.vue'
+import Card from '/components/Card.vue'
 
 export default {
   mounted() {
@@ -52,11 +52,11 @@ export default {
   methods: {
     // 了解更多
     LearnMore() {
-      window.location.href = "/Pano/Document/what-is-pano"
+      window.location.href = "/en/Pano/Document/what-is-pano"
     },
     // 联系我们
     ContactUs() {
-      window.location.href = "/Pano/Document/contact-us"
+      window.location.href = "/en/Pano/Document/contact-us"
     }
   },
   components: {

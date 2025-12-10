@@ -11,7 +11,7 @@ Select 2-12 cameras of the same brand, model, resolution, and focal length as mu
 ![Deployment of surveillance cameras](/Pano/CameraDeployment.jpg)
 
 ## Create Stitching
-If you have any splicing related issues, you can choose to [contact us](/Pano/Document/contact-us)。.
+If you have any splicing related issues, you can choose to [contact us](/en/Pano/Document/contact-us)。.
 
 ### Pre installation testing
 Before installation, test whether the usage effect meets the usage requirements at the minimum cost. Use your phone to stand at a high place and take a set of photos in order. Use [AutoStitch](https://matthewalunbrown.com/autostitch/autostitch.html) Or use [Photoshop](https://www.adobe.com/products/photoshop.html) function in [Photomerge](https://helpx.adobe.com/photoshop/using/create-panoramic-images-photomerge.chromeless.html) Function to create panoramic stitched photos.

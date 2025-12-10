@@ -31,9 +31,9 @@
 </template>
 
 <script>
-import ImageOverlay from '/Pano/components/ImageOverlay.vue'
-import CardContainer from '/Pano/components/CardContainer.vue'
-import Card from '/Pano/components/Card.vue'
+import ImageOverlay from '/components/ImageOverlay.vue'
+import CardContainer from '/components/CardContainer.vue'
+import Card from '/components/Card.vue'
 
 export default {
   mounted() {

@@ -7,7 +7,7 @@ keywords: Panoramic Video Stitching,Real time fusion of multiple cameras,Panoram
 # Contact Us
 
 <script setup>
-import ContactUs from '/components/ContactUs.vue'
+import ContactUs from '/en/components/ContactUs.vue'
 </script>
 
 <br />

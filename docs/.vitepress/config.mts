@@ -8,7 +8,7 @@ export default defineConfig({
 
   // 国际化多语言
   locales: {
-    root: en,
+    en: en,
     zh: zh,
   },
 })

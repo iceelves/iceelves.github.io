@@ -18,7 +18,7 @@ hero:
       link: https://github.com/iceelves/EasyDeploy/releases
     - theme: alt
       text: Document
-      link: /EasyDeploy/Document/what-is-easydeploy.html
+      link: /en/EasyDeploy/Document/what-is-easydeploy.html
     - theme: alt
       text: GitHub
       link: https://github.com/iceelves/EasyDeploy
