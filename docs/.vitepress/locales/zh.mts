@@ -9,10 +9,15 @@ export default {
         nav: [
             { text: '首页', link: '/zh/', hreflang: 'zh-CN' },
             {
+                text: '开源',
+                items: [
+                    { text: '轻松部署', link: '/zh/EasyDeploy/', hreflang: 'zh-CN' }
+                ],
+            },
+            {
                 text: '产品',
                 items: [
-                    { text: '轻松部署', link: '/zh/EasyDeploy/', hreflang: 'zh-CN' },
-                    { text: '全景拼接', link: '/zh/Pano/', hreflang: 'zh-CN' }
+                    { text: '全景拼接', link: '/zh/PanoramaStitching/', hreflang: 'zh-CN' }
                 ],
             }
         ],
@@ -34,16 +39,16 @@ export default {
             ],
 
             // 为 Pano 部分配置侧边栏
-            '/zh/Pano/': [
+            '/zh/PanoramaStitching/': [
                 {
                     text: '简介',
                     items: [
-                        { text: '什么是全景视频拼接', link: '/zh/Pano/Document/what-is-pano.html', hreflang: 'zh-CN' },
-                        { text: '创建一个全景视频', link: '/zh/Pano/Document/create-pano.html', hreflang: 'zh-CN' },
-                        { text: '更多设置', link: '/zh/Pano/Document/more-settings.html', hreflang: 'zh-CN' },
-                        { text: '全景投屏', link: '/zh/Pano/Document/pano-player.html', hreflang: 'zh-CN' },
-                        { text: '定制开发', link: '/zh/Pano/Document/custom-development.html', hreflang: 'zh-CN' },
-                        { text: '联系我们', link: '/zh/Pano/Document/contact-us.html', hreflang: 'zh-CN' }
+                        { text: '什么是全景视频拼接', link: '/zh/PanoramaStitching/Document/what-is-pano.html', hreflang: 'zh-CN' },
+                        { text: '创建一个全景视频', link: '/zh/PanoramaStitching/Document/create-pano.html', hreflang: 'zh-CN' },
+                        { text: '更多设置', link: '/zh/PanoramaStitching/Document/more-settings.html', hreflang: 'zh-CN' },
+                        { text: '全景投屏', link: '/zh/PanoramaStitching/Document/pano-player.html', hreflang: 'zh-CN' },
+                        { text: '定制开发', link: '/zh/PanoramaStitching/Document/custom-development.html', hreflang: 'zh-CN' },
+                        { text: '联系我们', link: '/zh/PanoramaStitching/Document/contact-us.html', hreflang: 'zh-CN' }
                     ]
                 }
             ]

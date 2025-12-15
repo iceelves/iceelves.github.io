@@ -44,7 +44,7 @@ const pages = readPages(distPath).map(file =>
 // 设置页面的优先级
 const getPriority = (page) => {
   if (page === '/en/' || page === '/zh/' ||
-    page === '/en/Pano/' || page === '/zh/Pano/') {
+    page === '/en/PanoramaStitching/' || page === '/zh/PanoramaStitching/') {
     return 1.0; // 根目录优先级最高
   } else {
     return 0.9; // 默认优先级

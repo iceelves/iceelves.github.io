@@ -3,16 +3,21 @@ export default {
     lang: "en-US",
     link: "/en/",
     title: "IceElves",
-    description: "Professional software solution provider, focusing on visual algorithm products for enterprises and technology developers, covering core areas such as 3D reconstruction and panoramic video stitching, providing professional customized development services.",
-    keywords: "3D Reconstruction,Tilt photography modeling,3DGS,Panoramic video stitching,Custom Development",
+    description: "Professional software solution provider, focusing on visual algorithm products for enterprises and technology developers, covering core areas such as 3D reconstruction and Panorama video stitching, providing professional customized development services.",
+    keywords: "3D Reconstruction,Tilt photography modeling,3DGS,Panorama video stitching,Custom Development",
     themeConfig: {
         nav: [
             { text: 'Home', link: '/en/', hreflang: 'en-US' },
             {
+                text: 'Open Source',
+                items: [
+                    { text: 'Easy Deploy', link: '/en/EasyDeploy/', hreflang: 'US' }
+                ],
+            },
+            {
                 text: 'Product',
                 items: [
-                    { text: 'Easy Deploy', link: '/en/EasyDeploy/', hreflang: 'US' },
-                    { text: 'Pano Stitching', link: '/en/Pano/', hreflang: 'US' }
+                    { text: 'Pano Stitching', link: '/en/PanoramaStitching/', hreflang: 'US' }
                 ],
             }
         ],
@@ -34,16 +39,16 @@ export default {
             ],
 
             // 为 Pano 部分配置侧边栏
-            '/en/Pano/': [
+            '/en/PanoramaStitching/': [
                 {
                     text: 'Introduction',
                     items: [
-                        { text: 'What is Pano video stitching', link: '/en/Pano/Document/what-is-pano.html', hreflang: 'US' },
-                        { text: 'Create a Pano video', link: '/en/Pano/Document/create-pano.html', hreflang: 'US' },
-                        { text: 'More Settings', link: '/en/Pano/Document/more-settings.html', hreflang: 'US' },
-                        { text: 'Pano Player', link: '/en/Pano/Document/pano-player.html', hreflang: 'US' },
-                        { text: 'Custom Development', link: '/en/Pano/Document/custom-development.html', hreflang: 'US' },
-                        { text: 'Contact Us', link: '/en/Pano/Document/contact-us.html', hreflang: 'US' }
+                        { text: 'What is Pano video stitching', link: '/en/PanoramaStitching/Document/what-is-pano.html', hreflang: 'US' },
+                        { text: 'Create a Pano video', link: '/en/PanoramaStitching/Document/create-pano.html', hreflang: 'US' },
+                        { text: 'More Settings', link: '/en/PanoramaStitching/Document/more-settings.html', hreflang: 'US' },
+                        { text: 'Pano Player', link: '/en/PanoramaStitching/Document/pano-player.html', hreflang: 'US' },
+                        { text: 'Custom Development', link: '/en/PanoramaStitching/Document/custom-development.html', hreflang: 'US' },
+                        { text: 'Contact Us', link: '/en/PanoramaStitching/Document/contact-us.html', hreflang: 'US' }
                     ]
                 }
             ]

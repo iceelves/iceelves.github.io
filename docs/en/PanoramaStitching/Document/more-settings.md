@@ -1,12 +1,12 @@
 ---
-title: Panoramic More settings
-description: Panoramic video stitching can merge videos captured by multiple cameras into immersive wide format images, which are widely used in scenes such as schools, parks, squares, sports venues, airports, and ports. Real time fusion of multiple cameras, panoramic video security platform, customized development.
-keywords: Panoramic Video Stitching,Real time fusion of multiple cameras,Panoramic video security platform
+title: Panorama More settings
+description: Panorama video stitching can merge videos captured by multiple cameras into immersive wide format images, which are widely used in scenes such as schools, parks, squares, sports venues, airports, and ports. Real time fusion of multiple cameras, Panorama video security platform, customized development.
+keywords: Panorama Video Stitching,Real time fusion of multiple cameras,Panorama video security platform
 ---
 
 # More Settings
-Before enabling panoramic video stitching, some work needs to be done.
-![Stitching Config](/Pano/StitchingConfig.jpg)
+Before enabling Panorama video stitching, some work needs to be done.
+![Stitching Config](/PanoramaStitching/StitchingConfig.jpg)
 
 ## Add camera
 Adding video streams such as RTSP and Onvif to the camera list will result in the video streams being concatenated in the order they are concatenated.
@@ -41,4 +41,4 @@ Configure OSD overlay display according to requirements, and choose OSD type and
 | BlackFontWithWhiteBorder | Black text and white border |
 | BlackandWhiteBrightnessInversion | Black and white brightness reversal |
 
-![Overlay OSD](/Pano/OverlayOSD.jpg)
+![Overlay OSD](/PanoramaStitching/OverlayOSD.jpg)

@@ -1,13 +1,13 @@
 <template>
   <div>
     <ImageOverlay :images="[
-      '/Pano/pano1.jpg',
-      '/Pano/pano2.jpg'
+      '/PanoramaStitching/pano1.jpg',
+      '/PanoramaStitching/pano2.jpg'
     ]" :duration="5000" />
 
     <div class="hero-overlay">
       <div class="hero-content">
-        <h1 class="hero-title">Panoramic Video Stitching</h1>
+        <h1 class="hero-title">Panorama Video Stitching</h1>
         <p class="hero-description">
           Real time fusion of multiple cameras seamlessly covers large scenes, making monitoring clearer, more
           efficient, and more intelligent.
@@ -52,11 +52,11 @@ export default {
   methods: {
     // 了解更多
     LearnMore() {
-      window.location.href = "/en/Pano/Document/what-is-pano"
+      window.location.href = "/en/PanoramaStitching/Document/what-is-pano"
     },
     // 联系我们
     ContactUs() {
-      window.location.href = "/en/Pano/Document/contact-us"
+      window.location.href = "/en/PanoramaStitching/Document/contact-us"
     }
   },
   components: {

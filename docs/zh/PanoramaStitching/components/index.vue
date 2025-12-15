@@ -1,8 +1,8 @@
 <template>
   <div>
     <ImageOverlay :images="[
-      '/Pano/pano1.jpg',
-      '/Pano/pano2.jpg'
+      '/PanoramaStitching/pano1.jpg',
+      '/PanoramaStitching/pano2.jpg'
     ]" :duration="5000" />
 
     <div class="hero-overlay">
@@ -42,11 +42,11 @@ export default {
   methods: {
     // 了解更多
     LearnMore() {
-      window.location.href = "/zh/Pano/Document/what-is-pano"
+      window.location.href = "/zh/PanoramaStitching/Document/what-is-pano"
     },
     // 联系我们
     ContactUs() {
-      window.location.href = "/zh/Pano/Document/contact-us"
+      window.location.href = "/zh/PanoramaStitching/Document/contact-us"
     }
   },
   components: {

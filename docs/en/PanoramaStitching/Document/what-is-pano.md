@@ -1,0 +1,50 @@
+---
+title: What is Panorama Video Stitching
+description: Panorama video stitching can merge videos captured by multiple cameras into immersive wide format images, which are widely used in scenes such as schools, parks, squares, sports venues, airports, and ports. Real time fusion of multiple cameras, Panorama video security platform, customized development.
+keywords: Panorama Video Stitching,Real time fusion of multiple cameras,Panorama video security platform
+---
+
+# What is Pano Video Stitching
+[Panorama video stitching](/en/PanoramaStitching/) is an innovative monitoring solution based on computer vision, graphics, and multi-sensor fusion technology. Its core lies in real-time stitching of video streams with overlapping areas captured by multiple cameras into seamless Panorama images through software algorithms, forming ultra wide viewing angles or stereoscopic monitoring scenes. This technology breaks through the limitations of traditional single camera viewing angles, eliminates image fragmentation and information silos, and achieves dynamic perception of large scenes with "one screen overview".
+
+Zero customization cost for installation, no need to replace existing hardware or purchase dedicated terminals. The video quality depends on the selected camera quality, seamlessly compatible with RTSP and Onvif protocols for security cameras, covering over 95% of global brand devices.
+
+<script>
+import ImageOverlay from '/components/ImageOverlay.vue'
+
+export default {
+  components: {
+    ImageOverlay
+  }
+};
+</script>
+
+<style scoped>
+.image-overlay-container {
+  height: 160px;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .image-overlay-container {
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+}
+</style>
+
+<ImageOverlay height="100px"
+    :images="[
+    '/PanoramaStitching/pano1.jpg',
+    '/PanoramaStitching/pano2.jpg'
+    ]" 
+    :duration="5000"
+/>
+
+
+## Do you want to further understand?
+- 👉 [Create a Panorama video](/en/PanoramaStitching/Document/create-pano)
+- ⚙️ [More Settings](/en/PanoramaStitching/Document/more-settings)
+- 📺 [Pano Player](/en/PanoramaStitching/Document/pano-player)
+- 🧩 [Custom Development](/en/PanoramaStitching/Document/custom-development)
+- 📞 [Contact Us](/en/PanoramaStitching/Document/contact-us)

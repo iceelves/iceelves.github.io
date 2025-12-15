@@ -6,7 +6,7 @@ keywords: 全景视频拼接,多路摄像头实时融合,全景视频安防平�
 
 # 更多设置
 在启用全景视频拼接前还需要做一些工作。
-![拼接配置](/Pano/StitchingConfig.jpg)
+![拼接配置](/PanoramaStitching/StitchingConfig.jpg)
 
 ## 添加相机
 以视频流 RTSP、Onvif 等方式添加到相机列表中，会按照拼接顺序获取视频流进行拼接。
@@ -41,4 +41,4 @@ keywords: 全景视频拼接,多路摄像头实时融合,全景视频安防平�
 | BlackFontWithWhiteBorder | 黑字白边框 |
 | BlackandWhiteBrightnessInversion | 黑白亮度反色 |
 
-![叠加 OSD](/Pano/OverlayOSD.jpg)
+![叠加 OSD](/PanoramaStitching/OverlayOSD.jpg)
