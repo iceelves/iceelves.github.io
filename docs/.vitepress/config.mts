@@ -6,6 +6,11 @@ import en from './locales/en.mts'
 export default defineConfig({
   base: '/',
 
+  // 百度站长校验
+  head: [
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-5OyBY8hx8L' }]
+  ],
+
   // 国际化多语言
   locales: {
     en: en,
