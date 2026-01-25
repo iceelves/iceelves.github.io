@@ -14,9 +14,9 @@ Select 2-12 cameras of the same brand, model, resolution, and focal length as mu
 If you have any splicing related issues, you can choose to [contact us](/en/PanoramaStitching/Document/contact-us)。.
 
 ### Pre installation testing
-Before installation, test whether the usage effect meets the usage requirements at the minimum cost. Use your phone to stand at a high place and take a set of photos in order. Use [AutoStitch](https://matthewalunbrown.com/autostitch/autostitch.html) Or use [Photoshop](https://www.adobe.com/products/photoshop.html) function in [Photomerge](https://helpx.adobe.com/photoshop/using/create-Panorama-images-photomerge.chromeless.html) Function to create Panorama stitched photos.
+Before installation, test whether the usage effect meets the usage requirements at the minimum cost. Use your phone to stand at a high place and take a set of photos in order. Use [AutoStitch](https://mattabrown.github.io/autostitch.html) Or use [Photoshop](https://www.adobe.com/products/photoshop.html) function in [Photomerge](https://helpx.adobe.com/photoshop/using/create-Panorama-images-photomerge.chromeless.html) Function to create Panorama stitched photos.
 
-![AutoStitch splash](https://matthewalunbrown.com/files/autostitch/splash.png)
+![AutoStitch splash](https://mattabrown.github.io/images/astitch.png)
 
 ### Installed for testing
 For installed surveillance cameras, they can be directly connected to the camera through the PanoramaStitching client program. After inputting camera parameters and connecting to the camera, automatic stitching is created. The program will automatically perform stitching verification, feature point extraction, distortion correction, image fusion, color difference correction, and cropping of the maximum inscribed rectangle.

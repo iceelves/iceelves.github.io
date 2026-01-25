@@ -14,9 +14,9 @@ keywords: 全景视频拼接,多路摄像头实时融合,全景视频安防平�
 如有任何拼接相关问题可以选择[联系我们](/zh/PanoramaStitching/Document/contact-us)。
 
 ### 安装前测试
-安装前以最小成本测试使用效果是否满足使用需求，使用手机站在高处按照顺序拍摄一组照片，使用 [AutoStitch](https://matthewalunbrown.com/autostitch/autostitch.html) 或者使用 [Photoshop](https://www.adobe.com/products/photoshop.html) 中的 [Photomerge](https://helpx.adobe.com/photoshop/using/create-Panorama-images-photomerge.chromeless.html) 功能创建全景拼接照片。
+安装前以最小成本测试使用效果是否满足使用需求，使用手机站在高处按照顺序拍摄一组照片，使用 [AutoStitch](https://mattabrown.github.io/autostitch.html) 或者使用 [Photoshop](https://www.adobe.com/products/photoshop.html) 中的 [Photomerge](https://helpx.adobe.com/photoshop/using/create-Panorama-images-photomerge.chromeless.html) 功能创建全景拼接照片。
 
-![AutoStitch splash](https://matthewalunbrown.com/files/autostitch/splash.png)
+![AutoStitch splash](https://mattabrown.github.io/images/astitch.png)
 
 ### 已安装测试
 对于已安装监控相机可以直接通过 PanoramaStitching 的客户端程序，输入相机参数连接到相机后自动创建拼接，程序会自动进行拼接校验、特征点提取、畸变矫正、图像融合、色差矫正、裁切最大内接矩形等工作。
