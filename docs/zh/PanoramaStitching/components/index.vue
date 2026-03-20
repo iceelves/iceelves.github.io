@@ -1,33 +1,37 @@
 <template>
   <div>
-    <ImageOverlay :images="[
-      '/PanoramaStitching/pano1.jpg',
-      '/PanoramaStitching/pano2.jpg',
-      '/PanoramaStitching/pano3.jpg'
-    ]" :duration="5000" />
+    <section>
+      <ImageOverlay :images="[
+        '/PanoramaStitching/pano1.jpg',
+        '/PanoramaStitching/pano2.jpg',
+        '/PanoramaStitching/pano3.jpg'
+      ]" :duration="5000" />
 
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <h1 class="hero-title">全景视频拼接</h1>
-        <p class="hero-description">
-          多路摄像头实时融合，无缝覆盖大场景，让监控更清晰、更高效、更智能。
-        </p>
-        <button class="btn btn-primary" @click="LearnMore">了解更多</button>
-        <button class="btn btn-secondary" @click="ContactUs">联系我们</button>
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1 class="hero-title">全景视频拼接</h1>
+          <p class="hero-description">
+            多路摄像头实时融合，无缝覆盖大场景，让监控更清晰、更高效、更智能。
+          </p>
+          <button class="btn btn-primary" @click="LearnMore">了解更多</button>
+          <button class="btn btn-secondary" @click="ContactUs">联系我们</button>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <CardContainer title="技术应用">
-      <Card title="RTSP/RTMP" content="支持主流实时流媒体传输协议，以低延迟实时传输音视频流。" />
-      <Card title="ONVIF" content="支持安防行业通用的开放协议，跨品牌设备互联、视频流传输、PTZ 控制等。" />
-      <Card title="CUDA" content="利用 GPU 强大算力加速视频处理，通过 CUDA 核心大幅提升实时处理性能。" />
-      <Card title="MP4/FLV" content="支持主流音视频协议存储，分时段选择下载，方便快捷，兼容广泛。" />
-      <Card title="H.264/HEVC" content="支持主流的视频压缩技术，显著降低带宽占用，同时保持高清画质。" />
-      <Card title="低延迟" content="毫秒级延迟实时展示，弱网环境下仍保持画面流畅，满足关键安防场景的实时指挥需求。" />
-      <Card title="高像素" content="4KHD 千万像素，输出无损画质，一切尽在掌握。" />
-      <Card title="深度学习" content="智能算法，场景自适应，实现精准识别、预测与自动化决策。" />
-      <Card title="AR增强" content="虚实融合，沉浸式交互体验，打造多领域可视化解决方案。" />
-    </CardContainer>
+    <section>
+      <CardContainer title="技术应用">
+        <Card title="RTSP/RTMP" content="支持主流实时流媒体传输协议，以低延迟实时传输音视频流。" />
+        <Card title="ONVIF" content="支持安防行业通用的开放协议，跨品牌设备互联、视频流传输、PTZ 控制等。" />
+        <Card title="CUDA" content="利用 GPU 强大算力加速视频处理，通过 CUDA 核心大幅提升实时处理性能。" />
+        <Card title="MP4/FLV" content="支持主流音视频协议存储，分时段选择下载，方便快捷，兼容广泛。" />
+        <Card title="H.264/HEVC" content="支持主流的视频压缩技术，显著降低带宽占用，同时保持高清画质。" />
+        <Card title="低延迟" content="毫秒级延迟实时展示，弱网环境下仍保持画面流畅，满足关键安防场景的实时指挥需求。" />
+        <Card title="高像素" content="4KHD 千万像素，输出无损画质，一切尽在掌握。" />
+        <Card title="深度学习" content="智能算法，场景自适应，实现精准识别、预测与自动化决策。" />
+        <Card title="AR增强" content="虚实融合，沉浸式交互体验，打造多领域可视化解决方案。" />
+      </CardContainer>
+    </section>
   </div>
 </template>
 
