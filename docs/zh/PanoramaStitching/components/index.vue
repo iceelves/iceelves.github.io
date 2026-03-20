@@ -2,7 +2,8 @@
   <div>
     <ImageOverlay :images="[
       '/PanoramaStitching/pano1.jpg',
-      '/PanoramaStitching/pano2.jpg'
+      '/PanoramaStitching/pano2.jpg',
+      '/PanoramaStitching/pano3.jpg'
     ]" :duration="5000" />
 
     <div class="hero-overlay">

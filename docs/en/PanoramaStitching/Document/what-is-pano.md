@@ -35,8 +35,9 @@ export default {
 
 <ImageOverlay height="100px"
     :images="[
-    '/PanoramaStitching/pano1.jpg',
-    '/PanoramaStitching/pano2.jpg'
+      '/PanoramaStitching/pano1.jpg',
+      '/PanoramaStitching/pano2.jpg',
+      '/PanoramaStitching/pano3.jpg'
     ]" 
     :duration="5000"
 />
