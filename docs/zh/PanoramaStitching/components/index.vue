@@ -395,7 +395,7 @@ export default {
 
   .application-scene-item {
     margin: 10px;
-    width: 45%;
+    width: 40%;
     box-sizing: border-box;
   }
 
