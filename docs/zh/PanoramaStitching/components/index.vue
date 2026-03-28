@@ -19,10 +19,97 @@
       </div>
     </section>
 
+    <section class="right-image-section">
+      <div class="right-image-content">
+        <div class="right-image-left">
+          <h2 class="h2-title">技术介绍</h2>
+          <p>
+            全景视频拼接是一种基于计算机视觉、图形学与多传感器融合技术的创新监控方案。其核心在于通过软件算法将多个摄像头拍摄的带有重叠区域的视频流，实时拼接为无缝全景画面，形成超宽视角或立体监控场景。
+          </p>
+        </div>
+        <div class="right-image-right">
+          <iframe
+            src="//player.bilibili.com/player.html?isOutside=true&aid=116305533341231&bvid=BV1xEXGBVE3g&cid=37040361383&p=1&danmaku=0&autoplay=0&preload=auto&t=3"
+            width="680px" height="383px" scrolling="no" frameborder="no" framespacing="0"
+            allowfullscreen="true"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="left-image-section">
+      <div class="left-image-content">
+        <div class="left-image-left">
+          <img src="/PanoramaStitching/StitchingDemo.png" alt="拼接演示" width="680px" height="383px" />
+        </div>
+        <div class="left-image-right">
+          <h2 class="h2-title">拼接演示</h2>
+          <p>
+            无需依赖一体化全景设备，根据实际需要自由选择摄像头品牌类型，即可实现 180° 甚至更广视野覆盖。自动识别并调整不同摄像头之间的色差、对焦差异、视角偏差，确保拼接结果的画质一致。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="right-image-section">
+      <div class="right-image-content">
+        <div class="right-image-left">
+          <h2 class="h2-title">安防平台</h2>
+          <p>
+            在全景视频拼接能力之上，我们进一步打造了一套一体化全景安防平台，融合视频拼接、 地图可视化、AI 智能分析与业务定制能力，为企业提供完整解决方案。
+          </p>
+        </div>
+        <div class="right-image-right">
+          <img src="/PanoramaStitching/PanoramicPlatformClient.jpg" alt="安防平台" width="680px" height="383px" />
+        </div>
+      </div>
+    </section>
+
+    <section class="application-scene-section">
+      <h2 class="h2-title">应用场景</h2>
+      <div class="application-scene-content">
+        <div class="application-scene-row">
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/airport.jpg" alt="机场" width="300px" height="200px" />
+            <p class="scene-caption">机场</p>
+          </div>
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/port.jpg" alt="港口" width="300px" height="200px" />
+            <p class="scene-caption">港口</p>
+          </div>
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/station.jpg" alt="车站" width="300px" height="200px" />
+            <p class="scene-caption">车站</p>
+          </div>
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/scenicarea.jpg" alt="景区" width="300px" height="200px" />
+            <p class="scene-caption">景区</p>
+          </div>
+        </div>
+        <div class="application-scene-row">
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/factory.jpg" alt="工厂" width="300px" height="200px" />
+            <p class="scene-caption">工厂</p>
+          </div>
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/school.jpg" alt="学校" width="300px" height="200px" />
+            <p class="scene-caption">学校</p>
+          </div>
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/park.jpg" alt="园区" width="300px" height="200px" />
+            <p class="scene-caption">园区</p>
+          </div>
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/venue.jpg" alt="场馆" width="300px" height="200px" />
+            <p class="scene-caption">场馆</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section>
       <CardContainer title="技术应用">
         <Card title="RTSP/RTMP" content="支持主流实时流媒体传输协议，以低延迟实时传输音视频流。" />
-        <Card title="ONVIF" content="支持安防行业通用的开放协议，跨品牌设备互联、视频流传输、PTZ 控制等。" />
+        <Card title="ONVIF" content="支持安防行业通用的开放协议，跨品牌设备互联、视频流传输、 PTZ 控制等。" />
         <Card title="CUDA" content="利用 GPU 强大算力加速视频处理，通过 CUDA 核心大幅提升实时处理性能。" />
         <Card title="MP4/FLV" content="支持主流音视频协议存储，分时段选择下载，方便快捷，兼容广泛。" />
         <Card title="H.264/HEVC" content="支持主流的视频压缩技术，显著降低带宽占用，同时保持高清画质。" />
@@ -145,6 +232,180 @@ export default {
   .hero-overlay {
     aspect-ratio: 16 / 9;
     height: auto;
+  }
+}
+
+.h2-title {
+  font-size: 2.0rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* 右侧图片 */
+.right-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.right-image-content {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.right-image-left {
+  flex: 1;
+  margin-right: 100px;
+  margin-top: 80px;
+}
+
+.right-image-right {
+  flex: 1;
+}
+
+/* 左侧图片 */
+.left-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: var(--vp-c-bg-alt);
+}
+
+.left-image-content {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.left-image-left {
+  flex: 1;
+}
+
+.left-image-right {
+  flex: 1;
+  margin-left: 100px;
+  margin-top: 80px;
+}
+
+/* 应用场景 */
+.application-scene-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: var(--vp-c-bg-alt);
+}
+
+.application-scene-content {
+  max-width: 1400px;
+  width: 100%;
+}
+
+.application-scene-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.application-scene-item {
+  text-align: center;
+  margin: 0 15px;
+  /* 增加左右间距 */
+  transition: transform 0.3s ease;
+  /* 过渡动画 */
+}
+
+.application-scene-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  /* 过渡动画 */
+}
+
+.application-scene-item:hover img {
+  transform: scale(1.05);
+  /* 鼠标悬停时图片变大 */
+}
+
+.scene-caption {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+
+  /* 右侧图片 */
+  .right-image-content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .right-image-left {
+    margin-right: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .right-image-right {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .right-image-right iframe {
+    width: 100%;
+  }
+
+  /* 左侧图片 */
+  .left-image-content {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .left-image-left,
+  .left-image-right {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* 应用场景 */
+  .application-scene-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* 允许换行 */
+    justify-content: center;
+    /* 居中对齐 */
+    align-items: center;
+  }
+
+  .application-scene-item {
+    margin: 10px;
+    width: 45%;
+    box-sizing: border-box;
+  }
+
+  .application-scene-item img {
+    width: 100%;
+  }
+
+  .scene-caption {
+    font-size: 14px;
+    text-align: center;
   }
 }
 </style>

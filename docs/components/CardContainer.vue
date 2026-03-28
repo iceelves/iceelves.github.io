@@ -42,4 +42,12 @@ h2 {
   gap: 30px;
   perspective: 1000px;
 }
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .cards-container ::v-deep .card {
+    width: 45%;
+    box-sizing: border-box;
+  }
+}
 </style>

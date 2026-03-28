@@ -20,6 +20,106 @@
       </div>
     </section>
 
+    <section class="right-image-section">
+      <div class="right-image-content">
+        <div class="right-image-left">
+          <h2 class="h2-title">Technical Introduction</h2>
+          <p>
+            Panorama video stitching is an innovative monitoring solution based on computer vision, graphics, and
+            multi-sensor fusion technology. Its core lies in real-time stitching of video streams with overlapping areas
+            captured by multiple cameras into seamless Panorama images through software algorithms, forming ultra wide
+            viewing angles or stereoscopic monitoring scenes.
+          </p>
+        </div>
+        <div class="right-image-right">
+          <iframe width="680px" height="383px"
+            src="https://www.youtube.com/embed/wPnUsllHuQk?si=DEtmrXcqOOmzuOFg&vq=hd1080" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="left-image-section">
+      <div class="left-image-content">
+        <div class="left-image-left">
+          <img src="/PanoramaStitching/StitchingDemo.png" alt="StitchingDemo" width="680px" height="383px" />
+        </div>
+        <div class="left-image-right">
+          <h2 class="h2-title">Stitching Demonstrate</h2>
+          <p>
+            Without relying on integrated panoramic equipment, you can freely choose the brand and type of camera
+            according to actual needs, achieving a 180° or even wider field of view coverage.
+          </p>
+          <p>
+            Automatically identify and adjust color differences, focus discrepancies, and view angle deviations among
+            different cameras to ensure consistent image quality in the stitching results.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="right-image-section">
+      <div class="right-image-content">
+        <div class="right-image-left">
+          <h2 class="h2-title">Panoramic Security Platform</h2>
+          <p>
+            Building upon our panoramic video stitching capabilities, we have further developed an integrated panoramic
+            security platform that integrates video stitching, map visualization, AI intelligent analysis, and business
+            customization capabilities, providing enterprises with a comprehensive solution.
+          </p>
+        </div>
+        <div class="right-image-right">
+          <img width="680px" height="383px" src="/PanoramaStitching/PanoramicPlatformClient.jpg"
+            alt="PanoramicSecurityPlatform" />
+        </div>
+      </div>
+    </section>
+
+    <section class="application-scene-section">
+      <h2 class="h2-title">Application Scenarios</h2>
+      <div class="application-scene-content">
+        <div class="application-scene-row">
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/airport.jpg" alt="Airport" width="300px" height="200px" />
+            <p class="scene-caption">Airport</p>
+          </div>
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/port.jpg" alt="Port" width="300px" height="200px" />
+            <p class="scene-caption">Port</p>
+          </div>
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/station.jpg" alt="Station" width="300px" height="200px" />
+            <p class="scene-caption">Station</p>
+          </div>
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/scenicarea.jpg" alt="Scenic area" width="300px"
+              height="200px" />
+            <p class="scene-caption">Scenic area</p>
+          </div>
+        </div>
+        <div class="application-scene-row">
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/factory.jpg" alt="Factory" width="300px" height="200px" />
+            <p class="scene-caption">Factory</p>
+          </div>
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/school.jpg" alt="School" width="300px" height="200px" />
+            <p class="scene-caption">School</p>
+          </div>
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/park.jpg" alt="Park" width="300px" height="200px" />
+            <p class="scene-caption">Park</p>
+          </div>
+          <div class="application-scene-item">
+            <img src="/PanoramaStitching/ApplicationScenarios/venue.jpg" alt="Venue" width="300px" height="200px" />
+            <p class="scene-caption">Venue</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section>
       <CardContainer title="Technology Application">
         <Card title="RTSP/RTMP"
@@ -155,6 +255,181 @@ export default {
   .hero-overlay {
     aspect-ratio: 16 / 9;
     height: auto;
+  }
+}
+
+.h2-title {
+  font-size: 2.0rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* 右侧图片 */
+.right-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.right-image-content {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.right-image-left {
+  flex: 1;
+  margin-right: 100px;
+  margin-top: 80px;
+}
+
+.right-image-right {
+  flex: 1;
+}
+
+/* 左侧图片 */
+.left-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 30px;
+
+  background-color: var(--vp-c-bg-alt);
+}
+
+.left-image-content {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.left-image-left {
+  flex: 1;
+}
+
+.left-image-right {
+  flex: 1;
+  margin-left: 100px;
+  margin-top: 80px;
+}
+
+/* 应用场景 */
+.application-scene-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: var(--vp-c-bg-alt);
+}
+
+.application-scene-content {
+  max-width: 1400px;
+  width: 100%;
+}
+
+.application-scene-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.application-scene-item {
+  text-align: center;
+  margin: 0 15px;
+  /* 增加左右间距 */
+  transition: transform 0.3s ease;
+  /* 过渡动画 */
+}
+
+.application-scene-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  /* 过渡动画 */
+}
+
+.application-scene-item:hover img {
+  transform: scale(1.05);
+  /* 鼠标悬停时图片变大 */
+}
+
+.scene-caption {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+
+  /* 右侧图片 */
+  .right-image-content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .right-image-left {
+    margin-right: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .right-image-right {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .right-image-right iframe {
+    width: 100%;
+  }
+
+  /* 左侧图片 */
+  .left-image-content {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .left-image-left,
+  .left-image-right {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* 应用场景 */
+  .application-scene-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* 允许换行 */
+    justify-content: center;
+    /* 居中对齐 */
+    align-items: center;
+  }
+
+  .application-scene-item {
+    margin: 10px;
+    width: 45%;
+    box-sizing: border-box;
+  }
+
+  .application-scene-item img {
+    width: 100%;
+  }
+
+  .scene-caption {
+    font-size: 14px;
+    text-align: center;
   }
 }
 </style>
