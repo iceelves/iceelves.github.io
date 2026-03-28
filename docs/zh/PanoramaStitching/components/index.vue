@@ -219,22 +219,6 @@ export default {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-/* 移动端适配 */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-description {
-    font-size: 1rem;
-  }
-
-  .hero-overlay {
-    aspect-ratio: 16 / 9;
-    height: auto;
-  }
-}
-
 .h2-title {
   font-size: 2.0rem;
   margin-bottom: 40px;
@@ -346,6 +330,20 @@ export default {
 
 /* 移动端适配 */
 @media (max-width: 768px) {
+
+  /* Hero */
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-overlay {
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
 
   /* 右侧图片 */
   .right-image-content {
