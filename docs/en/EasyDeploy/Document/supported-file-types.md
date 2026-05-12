@@ -1,3 +1,9 @@
+---
+title: Supported file types
+description: Easy Deploy is a software hosting program that runs in Windows, making it easier to run multiple applications, console programs, command-line programs, or script programs.
+keywords: EasyDeploy
+---
+
 # Supported file types
 Default support for executable files (*. exe) and batch files (*. bat) execution.
 It also supports script files, such as Python (*. py) and PowerShell (*. ps1).

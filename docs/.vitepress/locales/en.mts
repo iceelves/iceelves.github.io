@@ -11,7 +11,8 @@ export default {
             {
                 text: 'Open Source',
                 items: [
-                    { text: 'Easy Deploy', link: '/en/EasyDeploy/', hreflang: 'US' }
+                    { text: 'Easy Deploy', link: '/en/EasyDeploy/', hreflang: 'US' },
+                    { text: 'Easy Install', link: '/en/EasyInstall/', hreflang: 'US' }
                 ],
             },
             {
@@ -34,6 +35,19 @@ export default {
                     items: [
                         { text: 'What is EasyDeploy', link: '/en/EasyDeploy/Document/what-is-easydeploy.html', hreflang: 'US' },
                         { text: 'Supported file types', link: '/en/EasyDeploy/Document/supported-file-types.html', hreflang: 'US' }
+                    ]
+                }
+            ],
+
+            // 为 EasyInstall 部分配置侧边栏
+            '/en/EasyInstall/': [
+                {
+                    text: 'Introduction',
+                    items: [
+                        { text: 'What is EasyInstall', link: '/en/EasyInstall/Document/what-is-easyinstall.html', hreflang: 'US' },
+                        { text: 'Instructions for Use', link: '/en/EasyInstall/Document/instructions-for-use.html', hreflang: 'US' },
+                        { text: 'Development Instructions', link: '/en/EasyInstall/Document/development-instructions.html', hreflang: 'US' },
+                        { text: 'Contact Us', link: '/en/EasyInstall/Document/contact-us.html', hreflang: 'US' }
                     ]
                 }
             ],

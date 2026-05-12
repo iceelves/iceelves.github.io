@@ -2,8 +2,10 @@
     <form action="https://formspree.io/f/xdkwrvkj" class="fs-form fs-layout__2-column" target="_top" method="POST">
         <div class="fs-field">
             <label class="fs-label" for="business-area">业务</label>
-            <select class="fs-select" id="business-area" name="business-area" required>
-                <option value="pano">全景拼接</option>
+            <select class="fs-select" id="business-area" name="business-area" v-model="selectedBusiness" required>
+                <option v-for="option in businessOptions" :key="option.value" :value="option.value">
+                    {{ option.label }}
+                </option>
             </select>
         </div>
         <div class="fs-field">
@@ -55,6 +57,21 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
+// 业务默认值
+const props = defineProps({
+    defaultBusiness: {
+        type: String,
+        default: 'PanoramaStitching',
+    },
+});
+
+// 业务列表
+const businessOptions = [
+    { value: 'PanoramaStitching', label: '全景拼接' },
+    { value: 'EasyInstall', label: '轻松安装' }
+];
+
+const selectedBusiness = ref(props.defaultBusiness);
 const ipInfo = ref('');
 
 onMounted(() => {

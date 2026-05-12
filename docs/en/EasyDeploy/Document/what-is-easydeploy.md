@@ -1,3 +1,9 @@
+---
+title: What is Easy Deploy？
+description: Easy Deploy is a software hosting program that runs in Windows, making it easier to run multiple applications, console programs, command-line programs, or script programs.
+keywords: EasyDeploy
+---
+
 # What is Easy Deploy？
 [Easy Deploy](/en/EasyDeploy/) is a software hosting program that runs in Windows, making it easier to run multiple applications, console programs, command-line programs, or script programs.
 

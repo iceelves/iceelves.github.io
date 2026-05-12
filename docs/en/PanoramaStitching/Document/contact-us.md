@@ -11,4 +11,4 @@ import ContactUs from '/en/components/ContactUs.vue'
 </script>
 
 <br />
-<ContactUs />
+<ContactUs default-business="PanoramaStitching"/>

@@ -11,7 +11,8 @@ export default {
             {
                 text: '开源',
                 items: [
-                    { text: '轻松部署', link: '/zh/EasyDeploy/', hreflang: 'zh-CN' }
+                    { text: '轻松部署', link: '/zh/EasyDeploy/', hreflang: 'zh-CN' },
+                    { text: '轻松安装', link: '/zh/EasyInstall/', hreflang: 'zh-CN' }
                 ],
             },
             {
@@ -34,6 +35,19 @@ export default {
                     items: [
                         { text: '什么是 EasyDeploy', link: '/zh/EasyDeploy/Document/what-is-easydeploy.html', hreflang: 'zh-CN' },
                         { text: '支持文件类型', link: '/zh/EasyDeploy/Document/supported-file-types.html', hreflang: 'zh-CN' }
+                    ]
+                }
+            ],
+
+            // 为 EasyInstall 部分配置侧边栏
+            '/zh/EasyInstall/': [
+                {
+                    text: '简介',
+                    items: [
+                        { text: '什么是 EasyInstall', link: '/zh/EasyInstall/Document/what-is-easyinstall.html', hreflang: 'zh-CN' },
+                        { text: '使用说明', link: '/zh/EasyInstall/Document/instructions-for-use.html', hreflang: 'zh-CN' },
+                        { text: '开发说明', link: '/zh/EasyInstall/Document/development-instructions.html', hreflang: 'zh-CN' },
+                        { text: '联系我们', link: '/zh/EasyInstall/Document/contact-us.html', hreflang: 'zh-CN' }
                     ]
                 }
             ],
