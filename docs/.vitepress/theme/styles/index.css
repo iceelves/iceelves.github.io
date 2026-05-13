@@ -4,3 +4,17 @@
 @import './blur.css';
 /* 隐藏横条 */
 @import './hidden.css';
+
+/* ===== medium-zoom 图片点击放大 ===== */
+.vp-doc img {
+  cursor: zoom-in;
+}
+
+.medium-zoom-overlay {
+  z-index: 100;
+}
+
+.medium-zoom-image--opened {
+  z-index: 101;
+  cursor: zoom-out;
+}

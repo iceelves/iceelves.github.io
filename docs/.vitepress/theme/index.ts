@@ -1,8 +1,9 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
+import { h, onMounted, watch, nextTick } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import { useData } from 'vitepress';
+import { useData, useRoute } from 'vitepress'
+import mediumZoom from 'medium-zoom'
 
 // 主页默认样式
 import './style.css'
@@ -16,6 +17,23 @@ export default {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
+  },
+  setup() {
+    const route = useRoute()
+    const initZoom = () => {
+      // 对 .vp-doc 内的图片启用放大，排除已有链接包裹的图片
+      mediumZoom('.vp-doc img:not(a img)', {
+        background: 'var(--vp-c-bg)',
+        margin: 24,
+      })
+    }
+    onMounted(() => {
+      initZoom()
+    })
+    watch(
+      () => route.path,
+      () => nextTick(() => initZoom())
+    )
   },
   enhanceApp({ app, router, siteData }) {
     // ...
