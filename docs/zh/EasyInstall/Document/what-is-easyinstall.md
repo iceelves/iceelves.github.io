@@ -29,7 +29,7 @@ table img {
 }
 </style>
 
-| Default | CloudMusic | WeChat |
+| [Default](https://github.com/iceelves/EasyInstall/blob/main/src/InstallPack/EasyInstall.json) | [CloudMusic](https://github.com/iceelves/EasyInstall/blob/main/src/InstallPack/Example/CloudMusic_install.json) | [WeChat](https://github.com/iceelves/EasyInstall/blob/main/src/InstallPack/Example/WeChat_install.json) |
 | --- | --- | --- |
 | ![Default1](/EasyInstall/Screenshot/Default/1.png) | ![CloudMusic1](/EasyInstall/Screenshot/CloudMusic/1.png) | ![WeChat1](/EasyInstall/Screenshot/WeChat/1.png) |
 | ![Default2](/EasyInstall/Screenshot/Default/2.png) | ![CloudMusic2](/EasyInstall/Screenshot/CloudMusic/2.png) | ![WeChat2](/EasyInstall/Screenshot/WeChat/2.png) |
